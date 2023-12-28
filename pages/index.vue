@@ -9,14 +9,12 @@
                 <br><br>
                 Scrollez pour en savoir plus !
             </p>
-            <img src="C:\Users\testd\OneDrive\Documents\Github\Portfolio\assets\pp_github.png">
+            <img src="C:\Users\Stonks\Documents\GitHub\Portfolio\assets\pp_github.png">
         </section>
 
         <!-- Section 2  -->
-        <section class="w-10/12 mx-auto">
-            <p class="text-center text-6xl mt-20 mb-12">En moins d'un an </p>
-            <vue-typer text='Hello World! I was registered locally!'></vue-typer><vue-typer
-                text='Hello World! I was registered locally!'></vue-typer>
+        <section class="w-10/12 mx-auto font-inter">
+            <p class="text-center text-6xl mt-20 mb-1">En moins d'un an </p>
             <div class="justify-evenly flex">
                 <!-- Carte 1  -->
                 <div class="flex">
