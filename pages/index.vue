@@ -9,7 +9,7 @@
                 <br><br>
                 Scrollez pour en savoir plus !
             </p>
-            <img src="C:\Users\Stonks\Documents\GitHub\Portfolio\assets\pp_github.png">
+            <img src="C:\Users\Stonks\Documents\GitHub\Portfolio-nuxt\assets\pp_github.png">
         </section>
 
         <!-- Section 2  -->
@@ -78,7 +78,7 @@
         <p class="text-center text-6xl mb-12 mt-20 font-inter">Mes projets</p>
         <section class="flex flex-col">
             <!-- Portfolio -->
-            <div class="w-10/12 flex justify-between mx-auto mb-12">
+            <div class="w-8/12 flex justify-between mx-auto mb-12">
                 <!-- Image - partie gauche -->
                 <img class="w-1/2"
                     src="https://lh4.googleusercontent.com/-IQeMCS7azCF1FCp3IQtgKIA_KyVoRRrk-qh8DcbQBaf8KyvvRFg4EeVvmxmR-mhlKLl86jhn7rwz0OA7x3OmbCKBqdCPut9NOoUYOFwU6m677sEI5YlRSEjpb0LORz_5anmtaApgafnmU0nqtHsUBNBq7d29HbeFtdtzde5VlFxjQZB7xAl8d7MaV4_BA">
@@ -118,23 +118,27 @@
                 </div>
             </div>
 
-            <!-- Portfolio V2 -->
-            <div class="w-1/3 justify-between mx-auto mb-12 group relative rounded-lg">
+            <!-- Card V2 -->
+            <div
+                class="w-1/3 justify-between mx-auto mb-12 group relative font-inter">
                 <!-- Image -->
-                <img class="w-full"
-                    src="https://lh4.googleusercontent.com/-IQeMCS7azCF1FCp3IQtgKIA_KyVoRRrk-qh8DcbQBaf8KyvvRFg4EeVvmxmR-mhlKLl86jhn7rwz0OA7x3OmbCKBqdCPut9NOoUYOFwU6m677sEI5YlRSEjpb0LORz_5anmtaApgafnmU0nqtHsUBNBq7d29HbeFtdtzde5VlFxjQZB7xAl8d7MaV4_BA">
-
+                <img class="w-full rounded-xl" src="https://lh4.googleusercontent.com/-IQeMCS7azCF1FCp3IQtgKIA_KyVoRRrk-qh8DcbQBaf8KyvvRFg4EeVvmxmR-mhlKLl86jhn7rwz0OA7x3OmbCKBqdCPut9NOoUYOFwU6m677sEI5YlRSEjpb0LORz_5anmtaApgafnmU0nqtHsUBNBq7d29HbeFtdtzde5VlFxjQZB7xAl8d7MaV4_BA">
                 <!-- Div au survol -->
-                <div class="hidden group-hover:block absolute top-0 left-0 w-full h-full z-10"
-                    style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.85));">
-                    <div
-                        class="absolute top-3/4 left-[40%] transform -translate-x-1/2 -translate-y-1/2 text-white">
+                <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out absolute top-0 left-0 w-full h-full z-10 rounded-xl"
+                    style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.90));">
+                    <div class="absolute top-[80%] left-[40%] transform -translate-x-1/2 -translate-y-1/2 text-white group-hover:-translate-y-[60%] duration-300 ease-in-out">
                         <!-- titre -->
-                        <p class="text-4xl">Portofolio</p>
+                        <p class="text-4xl font-bold mb-4">Portfolio</p>
                         <!-- description -->
-                        <p class="text-xl">Réalisation d'un portfolio afin de pouvoir exposer mes projets et expériences passés et futurs</p>
+                        <p class="text-xl mb-4 font-normal">Réalisation d'un portfolio afin de pouvoir exposer mes projets et expériences
+                            passés et futurs</p>
                         <!-- stack -->
-                        <p> Laravel Vue Hashtag</p>
+                        <div class="flex w-1/3 justify-between">
+                            <img class="h-8"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/2560px-Nuxt_logo.svg.png">
+                            <img class="h-8"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png">
+                        </div>
                     </div>
                 </div>
             </div>
