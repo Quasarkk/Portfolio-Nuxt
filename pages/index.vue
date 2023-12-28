@@ -2,7 +2,10 @@
     <div class="text-slate-100">
         <!-- Section 1  -->
         <section class="flex justify-between w-10/12 mx-auto">
-            <p class="text-2xl">Bonjour je suis <span class="text-red-700"> développeur/créatif/curieux</span> <br><br>
+            <p class="text-4xl">Bonjour je suis 
+                <span class="text-red-700" ref="typewriterText"></span>
+                <span class="inline-block w-1 animate-blink">|</span>
+                <br><br>
                 Moi c'est Clément, jeune developpeur fullstack. J'aime construire des applications, peaufiner l'UI et
                 trouver des solutiosn techniques.
 
@@ -86,7 +89,7 @@
             <!-- Seconde colonne pour les 3 projets suivants -->
             <div class="flex-col w-1/2">
                 <PortfolioItem v-for="(project, index) in projects.slice(3, 6)" :key="project.title" :project="project"
-                    :index="index" :class="getItemHeightClass(index + 3)"/>
+                    :index="index" :class="getItemHeightClass(index + 3)" />
             </div>
         </section>
     </div>
@@ -99,7 +102,42 @@ export default {
     components: {
         PortfolioItem,
     },
+    mounted() {
+        this.typewriterEffect();
+    },
     methods: {
+        typewriterEffect() {
+          const phrases = ['développeur', 'créatif', 'curieux'];
+          let currentPhrase = 0;
+          let currentChar = 0;
+          const typewriterText = this.$refs.typewriterText;
+          const eraseDelay = 35; // Délai avant d'effacer le texte
+          const typeDelay = 50; // Délai entre chaque caractère tapé
+          const nextPhraseDelay = 800; // Délai avant de taper la prochaine phrase
+    
+          const typeChar = () => {
+            if (currentChar < phrases[currentPhrase].length) {
+              typewriterText.textContent += phrases[currentPhrase].charAt(currentChar);
+              currentChar++;
+              setTimeout(typeChar, typeDelay);
+            } else {
+              setTimeout(eraseChar, nextPhraseDelay);
+            }
+          };
+    
+          const eraseChar = () => {
+            if (currentChar > 0) {
+              typewriterText.textContent = phrases[currentPhrase].substring(0, currentChar - 1);
+              currentChar--;
+              setTimeout(eraseChar, eraseDelay);
+            } else {
+              currentPhrase = (currentPhrase + 1) % phrases.length;
+              setTimeout(typeChar, typeDelay);
+            }
+          };
+    
+          typeChar();
+        },
         getItemHeightClass(index) {
             // Vous pouvez définir vos hauteurs personnalisées ici
             const heights = [
@@ -114,75 +152,77 @@ export default {
             return heights[index % heights.length]; // Cette ligne assure que si vous avez plus d'éléments que de hauteurs, cela recommencera à partir de 0
         },
     },
-    data() {
-        return {
-            projects: [
-                {
-                    title: 'Portfolio',
-                    link: '/projects/portfolio',
-                    imageSrc: 'https://img.freepik.com/vecteurs-libre/modele-portefeuille-couleur-design-plat_23-2149215470.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703635200&semt=ais',
-                    description: "Réalisation d'un portfolio afin de pouvoir exposer mes projets et expériences passés et futurs",
-                    logos: [
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/2560px-Nuxt_logo.svg.png',
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
-                    ],
-                },
-                {
-                    title: "L'Atelier du Sud",
-                    link: '/projects/atelierdusud',
-                    imageSrc: 'https://www.macommune.info/wp-content/uploads/2021/02/atelier-du-sud-jeanne-carasso-poitevin-002-1200x766.jpg',
-                    description: "J'ai réalisé un site vitrine avec un backoffice permettant de créer des articles et des évènements.",
-                    logos: [
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/2560px-Nuxt_logo.svg.png',
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png',
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
-                    ],
-                },
 
-                {
-                    title: 'Onerep',
-                    link: '/projects/onerep',
-                    imageSrc: 'https://appmaster.io/api/_files/oqQD259R96yciZHjFVRneK/download/',
-                    description: "J'ai réalisé une application de créer des entrainements et de suivre sa progression",
-                    logos: [
-                        'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png',
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png',
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
-                    ],
-                },
-                {
-                    title: 'Bunker Project',
-                    link: '/projects/bunker',
-                    imageSrc: 'https://landen.imgix.net/blog_enKWriAikxIViACa/assets/JRnacqCwgKSBmLhy.jpg',
-                    description: "J'ai réalisé des CRUD avec Laravel et Vue.js dans un projet commun d'application de jeux ce rôle",
-                    logos: [
-                        'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png',
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png',
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
-                    ],
-                },
+data() {
+    return {
+        typing: true,
+        projects: [
+            {
+                title: 'Portfolio',
+                link: '/projects/portfolio',
+                imageSrc: 'https://img.freepik.com/vecteurs-libre/modele-portefeuille-couleur-design-plat_23-2149215470.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703635200&semt=ais',
+                description: "Réalisation d'un portfolio afin de pouvoir exposer mes projets et expériences passés et futurs",
+                logos: [
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/2560px-Nuxt_logo.svg.png',
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
+                ],
+            },
+            {
+                title: "L'Atelier du Sud",
+                link: '/projects/atelierdusud',
+                imageSrc: 'https://www.macommune.info/wp-content/uploads/2021/02/atelier-du-sud-jeanne-carasso-poitevin-002-1200x766.jpg',
+                description: "J'ai réalisé un site vitrine avec un backoffice permettant de créer des articles et des évènements.",
+                logos: [
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/2560px-Nuxt_logo.svg.png',
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png',
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
+                ],
+            },
 
-                {
-                    title: 'Ally',
-                    link: '/projects/ally',
-                    imageSrc: 'https://media.npr.org/assets/img/2016/11/22/allied_wide-ad8c935ff14d345085f08c0d5def3b3b7d6e7780.jpg',
-                    description: "J'ai été chef de projet pour la réalisation d'un site web en simulation d'agence durant 3 semaines",
-                    logos: [
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
-                    ],
-                },
-                {
-                    title: 'Darkest Dungeon',
-                    link: '/projects/darkestdungeon',
-                    imageSrc: 'https://cdn.akamai.steamstatic.com/steam/apps/262060/ss_7232ad33cf7e5e58613004fb888c18d3ab1fdd8d.1920x1080.jpg?t=1698787583',
-                    description: "J'ai réalisé une copie la plus proche possible d'un site en analysant simplement visuellement le rendu du site.",
-                    logos: [
-                        'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
-                    ],
+            {
+                title: 'Onerep',
+                link: '/projects/onerep',
+                imageSrc: 'https://appmaster.io/api/_files/oqQD259R96yciZHjFVRneK/download/',
+                description: "J'ai réalisé une application de créer des entrainements et de suivre sa progression",
+                logos: [
+                    'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png',
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png',
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
+                ],
+            },
+            {
+                title: 'Bunker Project',
+                link: '/projects/bunker',
+                imageSrc: 'https://landen.imgix.net/blog_enKWriAikxIViACa/assets/JRnacqCwgKSBmLhy.jpg',
+                description: "J'ai réalisé des CRUD avec Laravel et Vue.js dans un projet commun d'application de jeux ce rôle",
+                logos: [
+                    'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png',
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png',
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
+                ],
+            },
 
-                }
-            ]
-        };
-    },
+            {
+                title: 'Ally',
+                link: '/projects/ally',
+                imageSrc: 'https://media.npr.org/assets/img/2016/11/22/allied_wide-ad8c935ff14d345085f08c0d5def3b3b7d6e7780.jpg',
+                description: "J'ai été chef de projet pour la réalisation d'un site web en simulation d'agence durant 3 semaines",
+                logos: [
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
+                ],
+            },
+            {
+                title: 'Darkest Dungeon',
+                link: '/projects/darkestdungeon',
+                imageSrc: 'https://cdn.akamai.steamstatic.com/steam/apps/262060/ss_7232ad33cf7e5e58613004fb888c18d3ab1fdd8d.1920x1080.jpg?t=1698787583',
+                description: "J'ai réalisé une copie la plus proche possible d'un site en analysant simplement visuellement le rendu du site.",
+                logos: [
+                    'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
+                ],
+
+            }
+        ]
+    };
+},
 };
 </script>
