@@ -76,9 +76,18 @@
 
         <!-- Section 4 - Projets -->
         <p class="text-center text-6xl mb-12 mt-20 font-inter">Mes projets</p>
-        <section class="flex w-8/12 flex-wrap mx-auto justify-between border-2 border-green-700">
+        <section class="flex w-8/12 mx-auto">
+            <!-- Première colonne pour les 3 premiers projets -->
+            <div class="flex-col w-1/2 mx-2">
+                <PortfolioItem v-for="(project, index) in projects.slice(0, 3)" :key="project.title" :project="project"
+                    :index="index" :class="getItemHeightClass(index)" />
+            </div>
 
-            <PortfolioItem v-for="(project, index) in projects" :key="project.title" :project="project" :index="index" />
+            <!-- Seconde colonne pour les 3 projets suivants -->
+            <div class="flex-col w-1/2">
+                <PortfolioItem v-for="(project, index) in projects.slice(3, 6)" :key="project.title" :project="project"
+                    :index="index" :class="getItemHeightClass(index + 3)"/>
+            </div>
         </section>
     </div>
 </template>
@@ -89,6 +98,21 @@ import PortfolioItem from '~/components/PortfolioItem.vue';
 export default {
     components: {
         PortfolioItem,
+    },
+    methods: {
+        getItemHeightClass(index) {
+            // Vous pouvez définir vos hauteurs personnalisées ici
+            const heights = [
+                'h-[500px]', // Index 0
+                'h-[450px]', // Index 1
+                'h-[500px]', // Index 2
+                'h-[650px]', // Index 3
+                'h-[550px]', // Index 4
+                'h-[650px]', // Index 5
+                'h-[450px]', // Index 6
+            ];
+            return heights[index % heights.length]; // Cette ligne assure que si vous avez plus d'éléments que de hauteurs, cela recommencera à partir de 0
+        },
     },
     data() {
         return {
@@ -141,7 +165,7 @@ export default {
                 {
                     title: 'Ally',
                     link: '/projects/ally',
-                    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Ally_Financial.svg/1200px-Ally_Financial.svg.png',
+                    imageSrc: 'https://media.npr.org/assets/img/2016/11/22/allied_wide-ad8c935ff14d345085f08c0d5def3b3b7d6e7780.jpg',
                     description: "J'ai été chef de projet pour la réalisation d'un site web en simulation d'agence durant 3 semaines",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
@@ -155,6 +179,7 @@ export default {
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
                     ],
+
                 }
             ]
         };
