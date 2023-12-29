@@ -20,18 +20,21 @@
             <p class="text-center text-6xl mt-20 mb-1">En moins d'un an </p>
             <div class="justify-evenly flex">
                 <!-- Carte 1  -->
-                <div class="flex">
-                    <p class="text-4xl text-center">6<br> projets </p>
+                <div class="">
+                    <p class="text-4xl text-center" ref="projectCounter">0</p>
+                    <p class="text-center">projets</p>
                 </div>
 
                 <!-- Carte 2  -->
                 <div>
-                    <p class="text-4xl text-center">42<br> nuits blanches</p>
+                    <p class="text-4xl text-center" ref="nightCounter">0</p>
+                    <p class="text-center">nuits blanches</p>
                 </div>
 
                 <!-- Carte 3  -->
                 <div>
-                    <p class="text-4xl text-center">439<br> cafés</p>
+                    <p class="text-4xl text-center" ref="cafeCounter">0</p>
+                    <p class="text-center">cafés</p>
                 </div>
             </div>
         </section>
@@ -104,6 +107,9 @@ export default {
     },
     mounted() {
         this.typewriterEffect();
+        this.animateNumber(6, 'projectCounter', 2000); // Pour "6 projets"
+        this.animateNumber(42, 'nightCounter', 2000); // Pour "42 nuits blanches"
+        this.animateNumber(439, 'cafeCounter', 2000); // Pour "439 cafés"
     },
     methods: {
         typewriterEffect() {
@@ -137,6 +143,20 @@ export default {
           };
     
           typeChar();
+        },
+        animateNumber(target, refName, duration) {
+            let currentNumber = 0;
+            const startTime = new Date().getTime();
+            const endTime = startTime + duration;
+            const timer = setInterval(() => {
+                const now = new Date().getTime();
+                const remaining = Math.max((endTime - now) / duration, 0);
+                const value = Math.round(target - (remaining * target));
+                this.$refs[refName].innerText = value;
+                if (value === target) {
+                    clearInterval(timer);
+                }
+            }, 1000 / 60); // Mise à jour 60 fois par seconde
         },
         getItemHeightClass(index) {
             // Vous pouvez définir vos hauteurs personnalisées ici
