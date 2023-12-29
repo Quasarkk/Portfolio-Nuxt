@@ -9,6 +9,11 @@ export default {
           '50%': { opacity: '0' },
         },
       },
+      backgroundImage: {
+        'hero-pattern':
+          "linear-gradient(90deg, #334155, #0F182A), url('https://img.freepik.com/free-vector/vector-background-abstract-polygon-triangles_2065-346.jpg')",
+      },
+
       animation: {
         blink: 'blink 1s step-end infinite',
       },
