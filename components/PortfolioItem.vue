@@ -12,8 +12,8 @@
 
                 <p class="text-xl mb-4 font-normal">{{ project.description }}</p>
 
-                <div class="flex w-1/3 justify-between">
-                    <img v-for="logo in project.logos" :key="logo" class="h-8" :src="logo" />
+                <div class="flex">
+                    <img v-for="logo in project.logos" :key="logo" class="h-8 mx-3" :src="logo" />
                 </div>
             </div>
         </div>
