@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-slate-900 cursor-none focus:cursor-none hover:cursor-none">
+  <div class="bg-slate-900 cursor-none focus:cursor-none hover:cursor-none ">
     <NuxtLayout>
       <header class="w-full top-0 fixed mx-auto bg-slate-900/60 backdrop-blur-md text-slate-100 border-b-2 border-slate-100 z-50">
         <nav class="w-8/12 flex justify-between h-16">

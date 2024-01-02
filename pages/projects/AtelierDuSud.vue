@@ -1,5 +1,5 @@
 <template>
-    <div class="text-slate-100 font-inter">
+    <div class="text-slate-100 font-inter scroll-smooth">
         <!-- Hero Section -->
         <section
             class="flex justify-between w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900  p-10 rounded-xl shadow-lg  bg-cover bg-blend-multiply">
