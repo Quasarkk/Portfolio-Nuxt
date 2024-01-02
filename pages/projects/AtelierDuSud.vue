@@ -17,52 +17,55 @@
                 src="https://www.macommune.info/wp-content/uploads/2021/02/atelier-du-sud-jeanne-carasso-poitevin-002-1200x766.jpg">
         </section>
 
-        <section class="my-20 mx-auto w-10/12">
-            <h2 class="text-5xl text-center my-10">Le Projet en Détail</h2>
-            <div class="w-full">
+        <h2 class="text-5xl text-center my-10">Le Projet en Détail</h2>
+        <section class="my-20 mx-auto w-10/12 flex border-2 border-red-700" id="project-details">
+
+            <VerticalNavbar/>
+            <!-- phases du projet -->
+            <div class="w-2/3 ml-auto flex flex-col">
               <!-- Needs Gathering -->
-              <div class="w-2/3 my-20 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+              <div class="w-2/3 mb-20  bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700" id="needsGathering">
                 <p class="text-3xl font-semibold">Recueil des besoins</p>
                 <p>Discussions approfondies avec le client et analyse sectorielle pour identifier et prioriser les besoins.</p>
               </div>
         
               <!-- Fonctionalities -->
-              <div class="w-2/3 ml-auto text-right my-20 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+              <div class="w-2/3 my-20 ml-auto text-right  bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700" id="functionnalities">
                 <p class="text-3xl font-semibold">Fonctionnalités</p>
                 <p>Calendrier d'événements, sections de présentation, et espace contact inspirés de compagnies de théâtre.</p>
               </div>
         
               <!-- Technical Stack -->
-              <div class="w-2/3 my-20 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+              <div class="w-2/3 my-20 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700" id="technicalStack">
                 <p class="text-3xl font-semibold">Stack technique</p>
                 <p>Utilisation de Laravel 10 pour le backend, Vue.js pour le front-end, et Tailwind CSS pour le design.</p>
               </div>
         
               <!-- MCD -->
-              <div class="w-2/3 ml-auto text-right my-20 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+              <div class="w-2/3  my-20 ml-auto text-right bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700" id="MCD">
                 <p class="text-3xl font-semibold">MCD</p>
                 <p>Élaboration d'un Modèle Conceptuel de Données avec Drawio pour structurer la base de données.</p>
               </div>
         
               <!-- Wireframing and Mockups -->
-              <div class="w-2/3 my-20 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+              <div class="w-2/3 my-20 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700" id="wireframesMockups">
                 <p class="text-3xl font-semibold">Wireframing et maquettage</p>
                 <p>Création de wireframes et application d'un design system pour une interface utilisateur cohérente.</p>
               </div>
         
               <!-- Backoffice -->
-              <div class="w-2/3 ml-auto text-right my-20 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+              <div class="w-2/3 my-20 ml-auto text-right  bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700" id="backoffice">
                 <p class="text-3xl font-semibold">Backoffice</p>
                 <p>Conception d'un backoffice sécurisé pour la gestion d'articles, de tags, et des messages utilisateurs.</p>
               </div>
         
               <!-- Showcase Part -->
-              <div class="w-2/3 my-20 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+              <div class="w-2/3 mt-20 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700" id="userInterface">
                 <p class="text-3xl font-semibold">Partie vitrine</p>
                 <p>Présentation des associations, événements à venir, et mise en place d'une newsletter fonctionnelle.</p>
               </div>
             </div>
-          </section>
+        </section>
 
         <!-- Gallery -->
         <section class="my-20 mx-auto w-10/12">
