@@ -1,7 +1,7 @@
 <template>
     <div class="text-slate-100 font-inter">
       <!-- Section 1 -->
-      <section class="flex justify-between w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900  p-10 rounded-xl shadow-lg  bg-cover bg-blend-multiply">
+      <section class="flex justify-between w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 hover:bg-gradient-to-r p-10 rounded-xl shadow-lg  bg-cover bg-blend-multiply">
         <p class="text-3xl ">Bonjour je suis Clément, 
           <span class="bg-gradient-to-r from-sky-500 to-blue-300 text-4xl font-semibold bg-clip-text text-transparent" ref="typewriterText"></span>
           <span class="inline-block w-1 animate-blink">|</span>
@@ -22,10 +22,10 @@
             <h2 class="text-6xl mb-10 text-white">En moins d'un an</h2>
             <div class="grid grid-cols-3 gap-4">
                 <!-- Carte 1 : Projets -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+                <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-slate-700">
                     <div class="flex justify-center items-center">
                         <p class="text-6xl text-white mr-2" ref="projectCounter">6</p>
-                        <p class="text-xl text-gray-300 mt-auto">projets</p>
+                        <p class="text-xl text-slate-300 mt-auto">projets</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-12 text-sky-300" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" /><path d="M12 12l0 .01" /><path d="M3 13a20 20 0 0 0 18 0" />
@@ -33,10 +33,10 @@
                 </div>
         
                 <!-- Carte 2 : Nuits blanches -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+                <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-slate-700">
                     <div class="flex justify-center items-center">
                         <p class="text-6xl text-white mr-2" ref="nightCounter">42</p>
-                        <p class="text-xl text-gray-300 mt-auto">nuits blanches</p>
+                        <p class="text-xl text-slate-300 mt-auto">nuits blanches</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-12 text-sky-300" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
@@ -44,10 +44,10 @@
                 </div>
         
                 <!-- Carte 3 : Cafés -->
-                <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+                <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-slate-700">
                     <div class="flex justify-center items-center">
                         <p class="text-6xl text-white mr-2" ref="cafeCounter">439</p>
-                        <p class="text-xl text-gray-300 mt-auto">cafés</p>
+                        <p class="text-xl text-slate-300 mt-auto">cafés</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-12 text-sky-300" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -67,28 +67,28 @@
             <div class="flex justify-between">
                 <!-- Vue.js -->
                 <div class="flex flex-col items-center w-52">
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-green-900 w-full flex-col">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-green-900 w-full flex-col">
                         <img class="h-24 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" alt="Vue.js">
                         <p class="text-2xl text-white mt-6 mb-1 justify-center flex">Vue.js</p>
-                        <p class="text-xl text-gray-300 justify-center flex">4 projets</p>
+                        <p class="text-xl text-slate-300 justify-center flex">4 projets</p>
                     </div>
                 </div>
         
                 <!-- Laravel -->
                 <div class="flex flex-col items-center w-52">
-                    <div class="bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-red-900 w-full flex-col">
+                    <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-red-900 w-full flex-col">
                         <img class="h-24 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="Laravel">
                         <p class="text-2xl text-white mt-6 mb-1 justify-center flex">Laravel</p>
-                        <p class="text-xl text-gray-300 justify-center flex">3 projets</p>
+                        <p class="text-xl text-slate-300 justify-center flex">3 projets</p>
                     </div>
                 </div>
         
                 <!-- Tailwind -->
                 <div class="flex flex-col items-center w-52">
-                    <div class="bg-gray-800 group p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-sky-900 w-full">
+                    <div class="bg-slate-800 group p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-sky-900 w-full">
                         <img class="h-24 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" alt="Tailwind">
                         <p class="text-2xl mt-6 mb-1 text-white justify-center flex">Tailwind</p>
-                        <p class="text-xl text-gray-300 justify-center flex">6 projets</p>
+                        <p class="text-xl text-slate-300 justify-center flex">6 projets</p>
                     </div>
                 </div>
             </div>
