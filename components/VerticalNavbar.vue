@@ -174,8 +174,6 @@ ul {
     list-style: none;
 }
 
-.navmenu {}
-
 .navmenu ul {
     padding-left: 50px;
     position: relative;
@@ -189,7 +187,7 @@ ul {
     left: 40px;
     top: 35px;
     background: #f1f5f9;
-    z-index: 5;
+    z-index: 3;
 }
 
 .navmenu ul li {
@@ -216,7 +214,7 @@ ul {
     transform: translateY(-50%);
     border-radius: 50px;
     border: 4px solid #f1f5f9;
-    z-index: 99;
+    z-index: 4;
 }
 
 
