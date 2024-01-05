@@ -2,7 +2,7 @@
     <nav class="navmenu bg-slate-800 rounded-xl pr-4 max-h-[680px]">
         <ul class="">
             <li class="mb-4" data-section="needsGathering"><a id="week1" href="#needsGathering"
-                    class="before:bg-red-600">Semaine 1 </a></li>
+                  >Semaine 1 </a></li>
             <li class="my-4" data-section="functionnalities"><a id="week2" href="#functionnalities">Semaine 2 </a></li>
             <li class="my-4" data-section="technicalStack"><a id="week3" href="#technicalStack">Semaine 3 </a></li>
             <li class="my-4" data-section="MCD"><a id="week4" href="#MCD">Semaine 4 </a></li>

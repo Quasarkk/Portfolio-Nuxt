@@ -204,7 +204,7 @@ export default {
                 {
                     title: "L'Atelier du Sud",
                     link: '/projects/atelierdusud',
-                    imageSrc: 'https://www.macommune.info/wp-content/uploads/2021/02/atelier-du-sud-jeanne-carasso-poitevin-002-1200x766.jpg',
+                    imageSrc: 'http://localhost:3000/_nuxt/assets/atelierdusud/landing.png',
                     description: "J'ai réalisé un site vitrine avec un backoffice permettant de créer des articles et des évènements.",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/2560px-Nuxt_logo.svg.png',
@@ -227,7 +227,7 @@ export default {
                 {
                     title: 'Bunker Project',
                     link: '/projects/bunker',
-                    imageSrc: 'https://landen.imgix.net/blog_enKWriAikxIViACa/assets/JRnacqCwgKSBmLhy.jpg',
+                    imageSrc: 'http://localhost:3000/_nuxt/assets/bunker/bunker2.png',
                     description: "J'ai réalisé des CRUD avec Laravel et Vue.js dans un projet commun d'application de jeux ce rôle",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png',
