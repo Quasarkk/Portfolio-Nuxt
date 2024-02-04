@@ -4,24 +4,55 @@
     <!-- Hero Section -->
     <section
       class="flex justify-between w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 p-10 rounded-xl shadow-lg  bg-cover bg-blend-multiply">
-      <p class="text-4xl ">L'atelier du sud
-        <br><br>
-        <span class="text-3xl">
-          Une application web et un site vitrine destiné à un lieu associatif réalisé dans le cadre de mon stage de fin de
-          parcours.
-        </span>
-        <br><br>
-        <span class="text-2xl">
-          Scrollez pour en savoir plus !
-        </span>
-      </p>
+      <div>
+
+
+        <p class="text-4xl ">L'atelier du sud
+          <br><br>
+          <span class="text-3xl">
+            Une application web et un site vitrine destiné à un lieu associatif réalisé dans le cadre de mon stage de fin
+            de
+            parcours.
+          </span>
+          <br><br>
+          <span class="text-2xl">
+            Scrollez pour en savoir plus !
+          </span>
+        </p>
+        <!-- Figma + github -->
+        <div class="flex mt-12">
+          <a href="https://www.figma.com/file/SZrLRBWqreeUmez9vtZepx/producitivy?type=design&node-id=1-69&mode=design&t=IhxG0xMHL9vbp1Qc-0"
+            class="hover:text-sky-400"><svg xmlns="http://www.w3.org/2000/svg" class="w-12" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+              <path d="M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z" />
+              <path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15" />
+            </svg></a>
+          <a href="https://github.com/Quasarkk/productivity" class="hover:text-sky-400"><svg
+              xmlns="http://www.w3.org/2000/svg" class="w-12" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+              fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+            </svg></a>
+        </div>
+        <!-- stack -->
+        <div class="flex gap-12 mt-8">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" class="h-16" alt="Vue.js Logo" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
+            class="h-16" alt="Laravel Logo" />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
+            class="h-16" alt="Tailwind CSS Logo" />
+        </div>
+      </div>
       <img class="w-[800px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
         src="https://www.macommune.info/wp-content/uploads/2021/02/atelier-du-sud-jeanne-carasso-poitevin-002-1200x766.jpg">
     </section>
 
     <h2 class="text-5xl text-center my-10">Le Projet en Détail</h2>
     <section class="my-20 mx-auto w-10/12 flex" id="project-details">
-
       <VerticalNavbar />
       <!-- phases du projet -->
       <div class="w-2/3 ml-auto flex flex-col">
@@ -114,10 +145,10 @@
           <p class="text-3xl font-semibold">Interface utilisateur</p>
           <p class="text-xl text-left">Présentation des associations, événements à venir, et mise en place d'une
             newsletter fonctionnelle.</p>
-            <div class="flex">
-              <img src="@/assets/atelierdusud/contact.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg">
-              <img src="@/assets/atelierdusud/3nextevents.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg">
-            </div>
+          <div class="flex">
+            <img src="@/assets/atelierdusud/contact.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg">
+            <img src="@/assets/atelierdusud/3nextevents.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg">
+          </div>
 
         </button>
       </div>
@@ -140,8 +171,8 @@
         <img class="rounded-xl my-2" src="@/assets/atelierdusud/galery/associations.png">
         <img class="rounded-xl my-2" src="@/assets/atelierdusud/galery/calendar.png">
         <img class="rounded-xl my-2" src="@/assets/atelierdusud/galery/presentation.png">
-      </div>  
-  </section>
+      </div>
+    </section>
     <!-- Call to Action -->
     <section class="bg-slate-800 text-center p-10 mt-20">
       <h2 class="text-4xl text-white mb-4">Intéressé par un projet similaire ?</h2>
