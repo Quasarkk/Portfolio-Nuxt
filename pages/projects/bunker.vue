@@ -1,6 +1,6 @@
 <template>
   <div class="text-slate-100 font-inter scroll-smooth">
-    <ParticlesBackground class="" />
+    <ParticlesBackground class=""/>
 
     <!-- Hero Section -->
     <section
@@ -19,9 +19,9 @@
         </p>
         <!-- Links -->
         <div class="flex mt-12">
-          <a href="https://github.com/Cy-Bert/Bunker-Project/tree/CRUD-Tables" class="hover:text-sky-400"><svg
-              xmlns="http://www.w3.org/2000/svg" class="w-12" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-              fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <a href="https://github.com/Cy-Bert/Bunker-Project/tree/CRUD-Tables" class="hover:text-sky-400"><svg xmlns="http://www.w3.org/2000/svg"
+              class="w-12" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
               <path
                 d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
@@ -38,7 +38,7 @@
         </div>
       </div>
       <img class="w-[800px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
-        src="@/assets/bunker/bunker.png">
+      :src="bunkerImage">
     </section>
 
     <h2 class="text-5xl text-center my-10">Le Projet en Détail</h2>
@@ -73,7 +73,7 @@
             <br><br>
             Le bouton create ouvre la modale et permet d'entrer les informations
           </p>
-          <img class="rounded-lg" src="@/assets/bunker/create.png">
+          <img class="rounded-lg" :src="bunkerCreateImage">
         </div>
 
         <!-- Edit -->
@@ -88,7 +88,7 @@
             Une fonction watch enregistre chaque modification sans action de l'utilisateur et des règles de validation
             vérifies que les valeurs des champs soient correcte.
           </p>
-          <img class="rounded-lg" src="@/assets/bunker/edit.png">
+          <img class="rounded-lg" :src="bunkerEditImage">
         </div>
 
         <!-- Delete & show-->
@@ -96,7 +96,7 @@
           <p class="text-3xl font-semibold text-center mb-8">Suppression et affiche de table</p>
           <p class="text-xl">Un bouton delete permet de supprimer une table et un bouton show permet d'afficher les
             détails de la table.</p>
-          <img class="rounded-lg" src="@/assets/bunker/show.png">
+          <img class="rounded-lg" :src="bunkerShowImage">
         </div>
       </div>
     </section>
@@ -111,33 +111,25 @@
 </template>
     
 <script>
-import bunkerWireframeImage from '~/assets/bunker/wireframe.png';
-import bunkerMaquetteImage from '~/assets/bunker/maquette.png';
-import bunkerLogoImage from '~/assets/bunker/logo.png';
-import bunkerLandingImage from '~/assets/bunker/landing.png';
+import bunkerImage from '~/assets/bunker/bunker.png';
+import bunkerCreateImage from '~/assets/bunker/create.png';
+import bunkerEditImage from '~/assets/bunker/edit.png';
+import bunkerShowImage from '~/assets/bunker/show.png';
 
 export default {
   name: "AtelierDuSud",
 
   data() {
     return {
-      isOpenWireframe: false,
-
-      bunkerWireframeImage,
-      bunkerMaquetteImage,
-      bunkerLogoImage,
-      bunkerLandingImage,
+      bunkerImage,
+      bunkerCreateImage,
+      bunkerEditImage,
+      bunkerShowImage,
     }
   },
 
   methods: {
-        openModalWireframe() {
-            this.isOpenWireframe = true;
-        },
-        closeModalWireframe() {
-            this.isOpenWireframe = false;
-        },
-    },
+  },
 }
 </script>
     
