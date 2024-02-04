@@ -142,7 +142,7 @@ import ParticlesBackground from '~/components/ParticlesBackground.vue';
 import projectProductivityImage from '~/assets/project-productivity.png';
 import projectPortfolioImage from '~/assets/project-portfolio.png';
 import projectBunkerImage from '~/assets/bunker/bunker2.png';
-import projectDarkestDungeonImage from '~/assets/darkestdungeon.jpg'; // Assurez-vous que le chemin et le nom de fichier sont corrects
+import projectDarkestDungeonImage from '~/assets/darkestdungeon.jpg'; 
 import projectAtelierdusudImage from '~/assets/atelierdusud/landing.png';
 import projectOnerepImage from '~/assets/onerep/homepage.png';
 import projectAllyImage from '~/assets/ally/landing.png';
@@ -270,7 +270,8 @@ export default {
                 {
                     title: 'Portfolio',
                     link: '/projects/portfolio',
-                    imageSrc: projectPortfolioImage,                    description: "Réalisation d'un portfolio afin de pouvoir exposer mes projets et expériences passés et futurs",
+                    imageSrc: projectPortfolioImage,                    
+                    description: "Réalisation d'un portfolio afin de pouvoir exposer mes projets et expériences passés et futurs",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/2560px-Nuxt_logo.svg.png',
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
@@ -293,7 +294,7 @@ export default {
 
                     title: 'Darkest Dungeon',
                     link: '/projects/darkestdungeon',
-                    imageSrc: 'https://cdn.akamai.steamstatic.com/steam/apps/262060/ss_7232ad33cf7e5e58613004fb888c18d3ab1fdd8d.1920x1080.jpg?t=1698787583',
+                    imageSrc: projectDarkestDungeonImage, 
                     description: "J'ai réalisé une copie la plus proche possible d'un site en analysant simplement visuellement le rendu du site.",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
