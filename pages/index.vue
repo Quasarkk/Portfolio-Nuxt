@@ -19,7 +19,7 @@
                 </span>
             </p>
             <img class="w-[800px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
-                src="C:\Users\Stonks\Documents\GitHub\Portfolio-nuxt\assets\pp_github.png">
+            src="~/assets/pp_github.png">
         </section>
 
         <!-- Section 2  -->
