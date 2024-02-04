@@ -39,7 +39,7 @@
                 </div>
             </div>
             <img class="w-[800px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
-                src="@/assets/ally/landing.png">
+            :src="allyLandingImage">
         </section>
 
         <h2 class="text-5xl text-center my-10">Le Projet en Détail</h2>
@@ -189,8 +189,8 @@
         <button v-if="isOpenWireframe" @click="closeModalWireframe()"
             class="fixed top-0 bg-black/20 w-full h-full justify-center flex backdrop-blur-md overflow-auto flex-col">
             <div class="flex w-full h-[90%]">
-                <img src="@/assets/ally/wireframe.png" class="w-auto h-[80%] mx-auto my-auto rounded-lg">
-                <img src="@/assets/ally/maquette.png" class="w-auto h-[80%] mx-auto my-auto rounded-lg">
+                <img :src="allyWireframeImage" class="w-auto h-[80%] mx-auto my-auto rounded-lg">
+                <img :src="allyMaquetteImage" class="w-auto h-[80%] mx-auto my-auto rounded-lg">
             </div>
             <a class="text-slate-100 text-xl mx-auto border-2 border-sky-400 px-4 py-2 rounded-xl flex items-center justify-center transition duration-300 ease-in-out hover:bg-sky-400 hover:text-slate-800"
                 href="https://www.figma.com/file/4qAdBRyIAqw0mHNm1OJD8c/LGBT?type=design&node-id=51-7&mode=design&t=CKaZgB6UgXrnYvxX-00">
@@ -205,7 +205,6 @@
             </a>
         </button>
 
-
         <!-- Call to Action -->
         <section class="bg-slate-800 text-center p-10 mt-20">
             <h2 class="text-4xl text-white mb-4">Intéressé par un projet similaire ?</h2>
@@ -216,10 +215,18 @@
 </template>
       
 <script>
+import allyLandingImage from '~/assets/ally/landing.png';
+import allyWireframeImage from '~/assets/ally/wireframe.png';
+import allyMaquetteImage from '~/assets/ally/maquette.png';
+
 export default {
     data() {
         return {
             isOpenWireframe: false,
+
+            allyLandingImage,
+            allyWireframeImage,
+            allyMaquetteImage,
         };
     },
     methods: {

@@ -1,6 +1,6 @@
 <template>
     <div class="text-slate-100 font-inter scroll-smooth">
-        <ParticlesBackground class=""/>
+        <ParticlesBackground class="" />
 
         <!-- Hero Section -->
         <section
@@ -18,30 +18,32 @@
                 </p>
                 <div class="flex mt-12">
                     <a href="https://www.figma.com/file/ZSo4cG9oF8nnm3xcsPnJTz/Maquette-muscu?type=design&node-id=0-1&mode=design&t=V2ZsD7YAdqfPT3vn-0"
-                        class="hover:text-sky-400"><svg xmlns="http://www.w3.org/2000/svg" class="w-12"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                        class="hover:text-sky-400"><svg xmlns="http://www.w3.org/2000/svg" class="w-12" viewBox="0 0 24 24"
+                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                             <path d="M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z" />
                             <path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15" />
                         </svg></a>
-                    <a href="https://github.com/Quasarkk/Onerep" class="hover:text-sky-400"><svg xmlns="http://www.w3.org/2000/svg" class="w-12"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
+                    <a href="https://github.com/Quasarkk/Onerep" class="hover:text-sky-400"><svg
+                            xmlns="http://www.w3.org/2000/svg" class="w-12" viewBox="0 0 24 24" stroke-width="2"
+                            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path
                                 d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                         </svg></a>
                 </div>
                 <div class="flex gap-12 mt-8">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" class="h-16" alt="Vue.js Logo"/>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" class="h-16" alt="Laravel Logo"/>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" class="h-16" alt="Tailwind CSS Logo"/>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" class="h-16" alt="Vue.js Logo" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
+                        class="h-16" alt="Laravel Logo" />
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
+                        class="h-16" alt="Tailwind CSS Logo" />
                 </div>
             </div>
             <img class="w-[300px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
-                src="@/assets/onerep/training.png">
+            :src="exercisesImage">
         </section>
 
         <h2 class="text-5xl text-center my-10">Le Projet en Détail</h2>
@@ -222,21 +224,21 @@
         <!-- Modale image CRUD -->
         <button v-if="isOpenCrud" @click="closeModalCrud()"
             class="fixed top-0 bg-black/20 w-full h-full justify-center flex backdrop-blur-md overflow-auto">
-            <img src="@/assets/onerep/onerep-modal.png" class="h-5/6 mx-auto mt-24 rounded-lg">
+            <img :src="crudImage" class="h-5/6 mx-auto mt-24 rounded-lg">
         </button>
 
         <!-- Modale image SPA -->
         <button v-if="isOpenSpa" @click="closeModalSpa()"
             class="fixed top-0 bg-black/20 w-full h-full justify-center flex backdrop-blur-md overflow-auto">
-            <img src="@/assets/onerep/homepage.png" class="h-5/6 mx-auto mt-24 rounded-lg">
+            <img :src="spaImage" class="h-5/6 mx-auto mt-24 rounded-lg">
         </button>
 
         <!-- Modale image Wirefreame -->
         <button v-if="isOpenWireframe" @click="closeModalWireframe()"
             class="fixed top-0 bg-black/20 w-full h-full justify-center flex backdrop-blur-md overflow-auto flex-col">
             <div class="flex w-full h-[90%]">
-                <img src="@/assets/onerep/exercises.png" class="w-auto h-[80%] mx-auto my-auto rounded-lg">
-                <img src="@/assets/onerep/today.png" class="w-auto h-[80%] mx-auto my-auto rounded-lg">
+                <img :src="wireframeImage1" class="w-auto h-[80%] mx-auto my-auto rounded-lg">
+                <img :src="wireframeImage2" class="w-auto h-[80%] mx-auto my-auto rounded-lg">
             </div>
             <a class="text-slate-100 text-xl mx-auto border-2 border-sky-400 px-4 py-2 rounded-xl flex items-center justify-center transition duration-300 ease-in-out hover:bg-sky-400 hover:text-slate-800"
                 href="https://www.figma.com/file/ZSo4cG9oF8nnm3xcsPnJTz/Maquette-muscu?type=design&node-id=0-1&mode=design&t=V2ZsD7YAdqfPT3vn-0">
@@ -263,6 +265,12 @@
 </template>
       
 <script>
+import exercisesImage from '~/assets/onerep/exercises.png';
+import crudImage from '~/assets/onerep/onerep-modal.png';
+import spaImage from '~/assets/onerep/homepage.png';
+import wireframeImage1 from '~/assets/onerep/exercises.png';
+import wireframeImage2 from '~/assets/onerep/today.png';
+
 export default {
     name: "AtelierDuSud",
 
@@ -271,6 +279,12 @@ export default {
             isOpenCrud: false,
             isOpenSpa: false,
             isOpenWireframe: false,
+
+            exercisesImage,
+            crudImage,
+            spaImage,
+            wireframeImage1,
+            wireframeImage2,
         }
     },
 
