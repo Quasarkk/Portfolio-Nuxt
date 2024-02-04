@@ -139,6 +139,15 @@
 import PortfolioItem from '~/components/PortfolioItem.vue';
 import ParticlesBackground from '~/components/ParticlesBackground.vue';
 
+import projectProductivityImage from '~/assets/project-productivity.png';
+import projectPortfolioImage from '~/assets/project-portfolio.png';
+import projectBunkerImage from '~/assets/bunker/bunker2.png';
+import projectDarkestDungeonImage from '~/assets/darkestdungeon.jpg'; // Assurez-vous que le chemin et le nom de fichier sont corrects
+import projectAtelierdusudImage from '~/assets/atelierdusud/landing.png';
+import projectOnerepImage from '~/assets/onerep/homepage.png';
+import projectAllyImage from '~/assets/ally/landing.png';
+
+
 
 export default {
     components: {
@@ -249,7 +258,7 @@ export default {
                 {
                     title: 'Productivity',
                     link: '/projects/productivity',
-                    imageSrc: 'http://localhost:3000/_nuxt/assets/project-productivity.png',
+                    imageSrc: projectProductivityImage,
                     description: "Réalisation d'une application de productivité",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png',
@@ -261,8 +270,7 @@ export default {
                 {
                     title: 'Portfolio',
                     link: '/projects/portfolio',
-                    imageSrc: 'http://localhost:3000/_nuxt/assets/project-portfolio.png',
-                    description: "Réalisation d'un portfolio afin de pouvoir exposer mes projets et expériences passés et futurs",
+                    imageSrc: projectPortfolioImage,                    description: "Réalisation d'un portfolio afin de pouvoir exposer mes projets et expériences passés et futurs",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/2560px-Nuxt_logo.svg.png',
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
@@ -272,7 +280,7 @@ export default {
                 {
                     title: 'Bunker Project',
                     link: '/projects/bunker',
-                    imageSrc: 'http://localhost:3000/_nuxt/assets/bunker/bunker2.png',
+                    imageSrc: projectBunkerImage,
                     description: "J'ai réalisé des CRUD avec Laravel et Vue.js dans un projet commun d'application de jeux ce rôle",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png',
@@ -296,7 +304,7 @@ export default {
                 {
                     title: "L'Atelier du Sud",
                     link: '/projects/atelierdusud',
-                    imageSrc: 'http://localhost:3000/_nuxt/assets/atelierdusud/landing.png',
+                    imageSrc: projectAtelierdusudImage,
                     description: "J'ai réalisé un site vitrine avec un backoffice permettant de créer des articles et des évènements.",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png',
@@ -308,7 +316,7 @@ export default {
                 {
                     title: 'Onerep',
                     link: '/projects/onerep',
-                    imageSrc: 'http://localhost:3000/_nuxt/assets/onerep/homepage.png',
+                    imageSrc: projectOnerepImage,
                     description: "J'ai réalisé des CRUD avec Laravel et Vue.js dans un projet  d'application de musculation",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png',
@@ -320,7 +328,7 @@ export default {
                 {
                     title: 'Ally',
                     link: '/projects/ally',
-                    imageSrc: 'http://localhost:3000/_nuxt/assets/ally/landing.png',
+                    imageSrc: projectAllyImage,
                     description: "J'ai été chef de projet pour la réalisation d'un site web en simulation d'agence durant 3 semaines",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
