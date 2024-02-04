@@ -100,10 +100,6 @@
                         Ally. En tant que chef de projet, j'ai facilité ces échanges pour assurer une compréhension mutuelle
                         des attentes, ajuster le développement en conséquence et renforcer la confiance.
                     </p>
-                    <div class="flex justify-center items-center mt-4">
-                        <img src="@/assets/ally-project/meeting-example.png" alt="Meeting Example"
-                            class="w-full h-auto rounded-lg">
-                    </div>
                 </div>
             </div>
         </section>
