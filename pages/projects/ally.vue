@@ -1,5 +1,6 @@
 <template>
     <div class="text-slate-100 font-inter scroll-smooth">
+        <ParticlesBackground class=""/>
 
         <!-- Hero Section -->
         <section

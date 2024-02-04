@@ -1,5 +1,6 @@
 <template>
-    <div class="text-slate-100 font-inter animate-float">
+    <div class="text-slate-100 font-inter z-10">
+        <ParticlesBackground class=""/>
         <!-- Section 1 -->
         <section
             class="flex justify-between w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 hover:bg-gradient-to-r p-10 rounded-xl shadow-lg  bg-cover bg-blend-multiply">
@@ -81,7 +82,7 @@
                 <!-- Vue.js -->
                 <div class="flex flex-col items-center w-52">
                     <div
-                        class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-green-900 w-full flex-col">
+                        class="bg-slate-800 p-6 rounded-lg shadow-test transition hover:bg-green-900 hover:shadow-green w-full flex-col">
                         <img class="h-24 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png"
                             alt="Vue.js">
                         <p class="text-2xl text-white mt-6 mb-1 justify-center flex">Vue.js</p>
@@ -89,10 +90,11 @@
                     </div>
                 </div>
 
+
                 <!-- Laravel -->
                 <div class="flex flex-col items-center w-52">
                     <div
-                        class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-red-900 w-full flex-col">
+                        class="bg-slate-800 p-6 rounded-lg shadow-test transition hover:bg-red-900 hover:shadow-red w-full flex-col">
                         <img class="h-24 mx-auto"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
                             alt="Laravel">
@@ -104,7 +106,7 @@
                 <!-- Tailwind -->
                 <div class="flex flex-col items-center w-52">
                     <div
-                        class="bg-slate-800 group p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-sky-900 w-full">
+                        class="bg-slate-800 group p-6 rounded-lg shadow-test hover:shadow-blue transition hover:bg-sky-900 w-full">
                         <img class="h-24 mx-auto"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
                             alt="Tailwind">
@@ -135,10 +137,13 @@
 
 <script>
 import PortfolioItem from '~/components/PortfolioItem.vue';
+import ParticlesBackground from '~/components/ParticlesBackground.vue';
+
 
 export default {
     components: {
         PortfolioItem,
+        ParticlesBackground,
     },
     mounted() {
         this.typewriterEffect();
@@ -147,6 +152,35 @@ export default {
         this.animateNumber(439, 'cafeCounter', 2000); // Pour "439 cafés"
     },
     methods: {
+        handleMouseMove(e) {
+            const { offsetX, offsetY, target } = e;
+            const { clientWidth, clientHeight } = target;
+            const xPos = (offsetX / clientWidth) - 0.5;
+            const yPos = (offsetY / clientHeight) - 0.5;
+
+            const shadowX = 20 * xPos;
+            const shadowY = 20 * yPos;
+
+            target.style.boxShadow = `${shadowX}px ${shadowY}px 20px rgba(0, 0, 0, 0.3)`;
+        },
+        resetShadow(e) {
+            e.target.style.boxShadow = '';
+        },
+        addShadowEffectListeners() {
+            const cards = document.querySelectorAll('.shadow-test');
+            cards.forEach(card => {
+                card.addEventListener('mousemove', this.handleMouseMove);
+                card.addEventListener('mouseleave', this.resetShadow);
+            });
+        },
+        removeShadowEffectListeners() {
+            const cards = document.querySelectorAll('.shadow-test');
+            cards.forEach(card => {
+                card.removeEventListener('mousemove', this.handleMouseMove);
+                card.removeEventListener('mouseleave', this.resetShadow);
+            });
+        },
+    
         typewriterEffect() {
             const phrases = ['Développeur', 'Créatif', 'Curieux'];
             let currentPhrase = 0;
@@ -248,7 +282,7 @@ export default {
                 },
                 // 4
                 {
-                    
+
                     title: 'Darkest Dungeon',
                     link: '/projects/darkestdungeon',
                     imageSrc: 'https://cdn.akamai.steamstatic.com/steam/apps/262060/ss_7232ad33cf7e5e58613004fb888c18d3ab1fdd8d.1920x1080.jpg?t=1698787583',
@@ -257,7 +291,7 @@ export default {
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
                     ],
                 },
-  
+
                 // 5
                 {
                     title: "L'Atelier du Sud",
