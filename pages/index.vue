@@ -1,15 +1,15 @@
 <template>
     <div class="text-slate-100 font-inter z-10">
-        <ParticlesBackground class=""/>
+        <ParticlesBackground class="" />
         <!-- Section 1 -->
         <section
             class="flex justify-between w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 hover:bg-gradient-to-r p-10 rounded-xl shadow-lg  bg-cover bg-blend-multiply">
-            <p class="text-3xl ">Bonjour je suis Clément,
+            <p class="text-4xl ">Bonjour je suis Clément,
                 <span class="bg-gradient-to-r from-sky-500 to-blue-300 text-4xl font-semibold bg-clip-text text-transparent"
                     ref="typewriterText"></span>
                 <span class="inline-block w-1 animate-blink">|</span>
                 <br><br>
-                <span class="text-3xl">
+                <span class="text-2xl">
                     Moi c'est Clément, jeune developpeur fullstack. J'aime construire des applications, peaufiner l'UI et
                     trouver des solutions techniques.
                 </span>
@@ -18,8 +18,7 @@
                     Scrollez pour en savoir plus !
                 </span>
             </p>
-            <img class="w-[800px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
-            src="~/assets/pp_github.png">
+            <img class="w-[800px] rounded-lg" src="~/assets/pp_github.png">
         </section>
 
         <!-- Section 2  -->
@@ -118,7 +117,7 @@
         </section>
 
         <!-- Section 4 - Projets -->
-        <p class="text-center text-6xl mb-12 mt-20 font-inter">Mes projets</p>
+        <p class="text-center text-6xl mb-12 mt-20 font-inter" id="projects">Mes projets</p>
         <section class="flex w-8/12 mx-auto">
             <!-- Première colonne pour les 3 premiers projets -->
             <div class="flex-col w-1/2 mx-2">
@@ -141,11 +140,11 @@ import ParticlesBackground from '~/components/ParticlesBackground.vue';
 
 import projectProductivityImage from '~/assets/project-productivity.png';
 import projectPortfolioImage from '~/assets/project-portfolio.png';
-import projectBunkerImage from '~/assets/bunker/bunker2.png';
-import projectDarkestDungeonImage from '~/assets/darkestdungeon.jpg'; 
-import projectAtelierdusudImage from '~/assets/atelierdusud/landing.png';
-import projectOnerepImage from '~/assets/onerep/homepage.png';
-import projectAllyImage from '~/assets/ally/landing.png';
+import projectBunkerImage from '~/assets/project-bunker.png';
+import projectDarkestDungeonImage from '~/assets/project-darkestdungeon.png';
+import projectAtelierdusudImage from '~/assets/project-atelierdusud.png';
+import projectOnerepImage from '~/assets/project-onerep.png';
+import projectAllyImage from '~/assets/project-ally.png';
 
 
 
@@ -189,7 +188,7 @@ export default {
                 card.removeEventListener('mouseleave', this.resetShadow);
             });
         },
-    
+
         typewriterEffect() {
             const phrases = ['Développeur', 'Créatif', 'Curieux'];
             let currentPhrase = 0;
@@ -248,6 +247,10 @@ export default {
             ];
             return heights[index % heights.length]; // Cette ligne assure que si vous avez plus d'éléments que de hauteurs, cela recommencera à partir de 0
         },
+
+        scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        },
     },
 
     data() {
@@ -269,13 +272,14 @@ export default {
                 // 2
                 {
                     title: 'Portfolio',
-                    link: '/projects/portfolio',
-                    imageSrc: projectPortfolioImage,                    
-                    description: "Réalisation d'un portfolio afin de pouvoir exposer mes projets et expériences passés et futurs",
+                    // link: '/projects/portfolio', // Supprimez cette ligne
+                    imageSrc: projectPortfolioImage,
+                    description: "Réalisation d'un portfolio pour exposer mes projets et expériences.",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nuxt_logo.svg/2560px-Nuxt_logo.svg.png',
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',
                     ],
+                    clickAction: 'scrollToTop' // Ajoutez une nouvelle propriété pour le nom de la méthode
                 },
                 // 3
                 {
@@ -294,7 +298,7 @@ export default {
 
                     title: 'Darkest Dungeon',
                     link: '/projects/darkestdungeon',
-                    imageSrc: projectDarkestDungeonImage, 
+                    imageSrc: projectDarkestDungeonImage,
                     description: "J'ai réalisé une copie la plus proche possible d'un site en analysant simplement visuellement le rendu du site.",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png',

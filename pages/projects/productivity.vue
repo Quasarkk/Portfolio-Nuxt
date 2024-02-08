@@ -1,45 +1,100 @@
 <template>
     <div class="text-slate-100 font-inter scroll-smooth">
-        <ParticlesBackground class=""/>
+        <ParticlesBackground class="" />
 
-        <!-- Hero Section -->
         <section
-            class="flex justify-between w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 p-10 rounded-xl shadow-lg  bg-cover bg-blend-multiply">
+            class="flex justify-between w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 p-10 rounded-xl shadow-lg bg-cover bg-blend-multiply">
             <div>
-                <p class="text-4xl ">Productivity (en cours)
-                    <br><br>
-                    <span class="text-3xl">
-                        Un projet d'application de productivité innovante
-                    </span>
-                    <br><br>
-                    <span class="text-2xl">
-                        Scrollez pour en savoir plus !
-                    </span>
-                </p>
-                <!-- Figma + github -->
-                <div class="flex mt-12">
-                    <a href="https://www.figma.com/file/SZrLRBWqreeUmez9vtZepx/producitivy?type=design&node-id=1-69&mode=design&t=IhxG0xMHL9vbp1Qc-0"
-                        class="hover:text-sky-400"><svg xmlns="http://www.w3.org/2000/svg" class="w-12" viewBox="0 0 24 24"
+                <div class="flex items-center mb-4">
+                    <h1 class="text-5xl font-bold text-white mb-4 mr-12">Productivity</h1>
+                    <span class="text-xs bg-white text-slate-800 py-2 px-6 rounded-full font-bold ">EN COURS</span>
+                </div>
+                <div class="flex space-x-4 mb-4 w-full">
+                    <span class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 -mt-0.5"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+                            <path d="M18 14v4h4" />
+                            <path d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                            <path d="M15 3v4" />
+                            <path d="M7 3v4" />
+                            <path d="M3 11h16" />
+                        </svg>Janvier
+                        2024</span>
+                    <span class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="h-4 w-4 mr-1 -mt-0.5" viewBox="0 0 24 24"
                             stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                             stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M12 12l3 -2" />
+                            <path d="M12 7v5" />
+                        </svg>
+                        1 mois
+                    </span>
+                    <span class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-clock-hour-2 h-4 w-4 mr-1 -mt-0.5" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
+                            <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
+                            <path d="M9.7 17l4.6 0" />
+                        </svg>Side project</span>
+                </div>
+                <p class="text-2xl text-slate-300 mb-6  w-[90%]">
+                    Un projet d'application de productivité innovante.
+                    <br>Scrollez pour en savoir plus !
+                </p>
+
+                <!-- Technology Stack Icons -->
+                <div class="flex justify-between mt-8 w-[85%]">
+                    <div class="flex items-center px-3 py-1 bg-slate-600 text-white font-semibold rounded-lg">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" class="h-6 mr-2"
+                            alt="Vue.js logo" />
+                        Vue.js
+                    </div>
+                    <div class="flex items-center px-3 py-1 bg-slate-600 text-white font-semibold rounded-lg">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
+                            class="h-6 mr-2" alt="Laravel logo" />
+                        Laravel
+                    </div>
+                    <div class="flex items-center px-3 py-1 bg-slate-600 text-white font-semibold rounded-lg">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
+                            class="h-6 mr-2" alt="Tailwind CSS logo" />
+                        Tailwind
+                    </div>
+                </div>
+                <!-- Figma + GitHub links -->
+                <div class="flex gap-8 mt-8">
+                    <!-- Figma Link -->
+                    <a href="https://www.figma.com/file/SZrLRBWqreeUmez9vtZepx/productivity?type=design&node-id=1-69&mode=design&t=IhxG0xMHL9vbp1Qc-0"
+                        class="group text-slate-400 underline-offset-2 decoration-2 hover:underline hover:font-bold hover:text-white flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-8 group-hover:stroke-white group-hover:stroke-2 stroke-slate-400 stroke-1"
+                            viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
                             <path d="M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z" />
                             <path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15" />
-                        </svg></a>
-                    <a href="https://github.com/Quasarkk/productivity" class="hover:text-sky-400"><svg
-                            xmlns="http://www.w3.org/2000/svg" class="w-12" viewBox="0 0 24 24" stroke-width="2"
-                            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        </svg>
+                        Figma
+                    </a>
+                    <!-- GitHub Link -->
+                    <a href="https://github.com/Quasarkk/productivity"
+                        class="group text-slate-400 underline-offset-2 decoration-2 hover:underline hover:font-bold hover:text-white flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="w-8 group-hover:stroke-white group-hover:stroke-2 stroke-slate-400 stroke-1"
+                            viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path
                                 d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
-                        </svg></a>
-                </div>
-                <!-- stack -->
-                <div class="flex gap-12 mt-8">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" class="h-16" alt="Vue.js Logo"/>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" class="h-16" alt="Laravel Logo"/>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" class="h-16" alt="Tailwind CSS Logo"/>
+                        </svg> GitHub
+                    </a>
                 </div>
             </div>
             <img class="w-[800px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
@@ -75,7 +130,8 @@
             <!-- phases du projet -->
             <div class="w-2/3 ml-auto flex flex-col">
                 <!-- V.0 -->
-                <div class="mb-10 w-full bg-gray-800 p-6 rounded-lg shadow-xl transition hover:bg-gray-700" id="needsGathering">
+                <div class="mb-10 w-full bg-gray-800 p-6 rounded-lg shadow-xl transition hover:bg-gray-700"
+                    id="needsGathering">
                     <div class="flex justify-between items-center mb-4">
                         <p class="text-3xl font-semibold text-center">V.0 - MVP (En cours)</p>
                         <span class="text-xs bg-white text-green-800 py-1 px-3 rounded-full font-bold">EN COURS</span>
@@ -137,7 +193,8 @@
                 <div class="my-10 border-t-4 rounded-full border-slate-400"></div>
 
                 <!-- V.1 -->
-                <div class="mb-10 w-full bg-gray-800 p-6 rounded-lg shadow-xl transition hover:bg-gray-700" id="functionnalities">
+                <div class="mb-10 w-full bg-gray-800 p-6 rounded-lg shadow-xl transition hover:bg-gray-700"
+                    id="functionnalities">
                     <div class="flex justify-between items-center mb-4">
                         <p class="text-3xl font-semibold text-center">V.1 - App Personnalisée</p>
                         <span class="text-xs bg-slate-500 text-white py-1 px-3 rounded-full font-bold">PRÉVU</span>
@@ -165,31 +222,61 @@
                 <div class="mb-20 w-full bg-gray-800 p-6 h-[400px] rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700"
                     id="technicalStack">
                     <div class="flex justify-between items-center mb-4">
-                        <p class="text-3xl font-semibold text-center">V.1 - App Personnalisée</p>
-                        <span class="text-xs bg-slate-500 text-white py-1 px-3 rounded-full font-bold">PRÉVU</span>
+                        <p class="text-3xl font-semibold text-center">V.2 - SAAS</p>
+                        <span class="text-xs bg-slate-500 text-white py-1 px-3 rounded-full font-bold">ENVISAGÉ</span>
                     </div>
-                    <p class="text-xl">La version 2 transforme l'expérience en une plateforme SaaS complète, avec des outils
-                        et des intégrations destinés à l'amélioration de la productivité dans un environnement collaboratif.
-                    </p>
+                    <p class="text-xl">La version 2 évolue vers une plateforme SaaS enrichie, incorporant des outils pour
+                        booster la productivité collective.</p>
                     <ul class="mt-8 ml-4 text-xl">
-                        <li class="list-disc marker:text-sky-400">Rappels et notifications intégrés pour rester sur la bonne
-                            voie</li>
-                        <li class="list-disc marker:text-sky-400">Mode focus pour minimiser les distractions</li>
-                        <li class="list-disc marker:text-sky-400">Intégration avec des services tiers pour une expérience
-                            centralisée</li>
-                        <li class="list-disc marker:text-sky-400">Exportation de planning en format PDF pour la portabilité
-                        </li>
-                        <li class="list-disc marker:text-sky-400">UI/UX avancée pour une expérience utilisateur encore plus
-                            riche</li>
+                        <li class="list-disc marker:text-sky-400">Intégration de rappels et notifications pour un suivi
+                            efficace</li>
+                        <li class="list-disc marker:text-sky-400">Mode focus pour une concentration optimale</li>
+                        <li class="list-disc marker:text-sky-400">Connexion avec des applications tierces pour centraliser
+                            les ressources</li>
+                        <li class="list-disc marker:text-sky-400">Options d'export en PDF pour une gestion flexible des
+                            plannings</li>
+                        <li class="list-disc marker:text-sky-400">Interface utilisateur avancée pour une navigation
+                            intuitive</li>
                     </ul>
                 </div>
+                <div class="my-10 border-t-4 rounded-full border-slate-400"></div>
+
+                <!-- V.3 -->
+                <div class="mb-20 w-full bg-gray-800 p-6 h-[400px] rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700"
+                    id="MCD">
+                    <div class="flex justify-between items-center mb-4">
+                        <p class="text-3xl font-semibold text-center">V.3 - Appli SAAS ++</p>
+                        <span
+                            class="text-xs bg-slate-500 text-white py-1 px-3 rounded-full font-bold capitalize">ENVISAGÉ</span>
+                    </div>
+                    <p class="text-xl">La V.3 représente une avancée significative, proposant une solution SaaS étendue avec
+                        des fonctionnalités pour le travail collaboratif et la personnalisation de l'expérience.</p>
+                    <ul class="mt-8 ml-4 text-xl">
+                        <li class="list-disc marker:text-sky-400">Notifications géolocalisées pour des rappels pertinents
+                        </li>
+                        <li class="list-disc marker:text-sky-400">Analyses personnalisées et retours d'usage pour un suivi
+                            des avancées individuelles</li>
+                        <li class="list-disc marker:text-sky-400">Espace de partage communautaire pour échanger routines et
+                            objectifs</li>
+                        <li class="list-disc marker:text-sky-400">Journaling intégré pour un suivi quotidien des tâches et
+                            de la productivité</li>
+                        <li class="list-disc marker:text-sky-400">Méthodes éprouvées de gestion du temps et de la
+                            productivité</li>
+                        <li class="list-disc marker:text-sky-400">Fonctionnalités pour l'analyse du sommeil, visant une
+                            approche globale du bien-être</li>
+                        <li class="list-disc marker:text-sky-400">Conception UI/UX réalisée par des experts pour une
+                            ergonomie optimale</li>
+                    </ul>
+                </div>
+
+
             </div>
         </section>
 
         <!-- Call to Action -->
         <section class="bg-slate-800 text-center p-10 mt-20">
             <h2 class="text-4xl text-white mb-4">Intéressé par un projet similaire ?</h2>
-            <a href="/contact"
+            <a href="https://www.linkedin.com/in/cl%C3%A9ment-e-a48865264/"
                 class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Contactez-moi</a>
         </section>
     </div>

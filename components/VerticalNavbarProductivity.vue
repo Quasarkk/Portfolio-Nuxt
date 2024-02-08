@@ -1,13 +1,12 @@
 <template>
     <nav class="navmenu bg-slate-800 rounded-xl pr-4 max-h-[680px]">
         <ul class="">
-            <li class="mb-4" data-section="needsGathering"><a id="week1" href="#needsGathering"
-                  >V.0 (MVP) </a></li>
+            <li class="mb-4" data-section="needsGathering"><a id="week1" href="#needsGathering">V.0 (MVP) </a></li>
             <li class="my-4" data-section="functionnalities"><a id="week2" href="#functionnalities">V.1 </a></li>
             <li class="my-4" data-section="technicalStack"><a id="week3" href="#technicalStack">V.2 </a></li>
             <li class="my-4" data-section="MCD"><a id="week4" href="#MCD">V3</a></li>
 
-<!--             <li class="my-4" data-section="wireframesMockups"><a id="week5" href="#wireframesMockups">Semaine 5 </a></li>
+            <!--             <li class="my-4" data-section="wireframesMockups"><a id="week5" href="#wireframesMockups">Semaine 5 </a></li>
             <li class="my-4" data-section="backoffice"><a id="week6" href="#backoffice">Semaine 6 </a></li>
             <li class="mt-4" data-section="userInterface"><a id="week7" href="#userInterface">Semaine 7 </a></li> -->
         </ul>
@@ -26,8 +25,6 @@ export default {
     mounted() {
         const nav = document.querySelector('.navmenu');
         const projectDetails = document.querySelector('#project-details');
-
-
 
         // Navbar suis le scroll
         window.addEventListener('scroll', () => {
@@ -51,98 +48,55 @@ export default {
         })
 
         // Navbar before background change on scroll
-
-        // week1
+        // v.0
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#needsGathering");
+            var elementTargetTop = elementTarget.getBoundingClientRect().top;
 
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
+            if (elementTargetTop <= 0) {
                 document.querySelector('#week1').classList.add('white-before');
             } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
                 document.querySelector('#week1').classList.remove('white-before');
             }
         });
 
-        // week2
+        // v.1
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#functionnalities");
+            var elementTargetTop = elementTarget.getBoundingClientRect().top;
 
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
+            if (elementTargetTop <= 0) {
                 document.querySelector('#week2').classList.add('white-before');
             } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
                 document.querySelector('#week2').classList.remove('white-before');
             }
         });
 
-        // week3
+        // v.2
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#technicalStack");
+            var elementTargetTop = elementTarget.getBoundingClientRect().top;
 
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
+            if (elementTargetTop <= 0) {
                 document.querySelector('#week3').classList.add('white-before');
             } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
                 document.querySelector('#week3').classList.remove('white-before');
             }
         });
 
-        // week4
+
+        // v.3
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#MCD");
+            var elementTargetTop = elementTarget.getBoundingClientRect().top;
 
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
+
+            if (elementTargetTop <= 0) {
                 document.querySelector('#week4').classList.add('white-before');
             } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
                 document.querySelector('#week4').classList.remove('white-before');
             }
         });
-
-        // week5
-        window.addEventListener('scroll', () => {
-            var elementTarget = document.querySelector("#wireframesMockups");
-
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
-                document.querySelector('#week5').classList.add('white-before');
-            } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
-                document.querySelector('#week5').classList.remove('white-before');
-            }
-        });
-
-        // week6
-        window.addEventListener('scroll', () => {
-            var elementTarget = document.querySelector("#backoffice");
-
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
-                document.querySelector('#week6').classList.add('white-before');
-            } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
-                document.querySelector('#week6').classList.remove('white-before');
-            }
-        });
-
-        // week7
-        window.addEventListener('scroll', () => {
-            var elementTarget = document.querySelector("#userInterface");
-
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
-                document.querySelector('#week7').classList.add('white-before');
-            } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
-                document.querySelector('#week7').classList.remove('white-before');
-            }
-        });
-
     }
 }
 </script>
