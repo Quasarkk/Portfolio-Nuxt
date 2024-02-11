@@ -88,7 +88,7 @@
                 <!-- Vue.js -->
                 <div class="flex flex-col items-center mb-4 w-full sm:w-52">
                     <div
-                        class="bg-slate-800 p-6 rounded-lg shadow-xl transition hover:bg-green-900 hover:shadow-lg w-full flex-col">
+                        class="bg-slate-800 p-6 rounded-lg shadow-xl transition hover:bg-green-900 hover:shadow-green w-full flex-col">
                         <img class="h-24 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png"
                             alt="Vue.js">
                         <p class="text-xl sm:text-2xl text-white mt-6 mb-1 justify-center flex">Vue.js</p>
@@ -99,7 +99,7 @@
                 <!-- Laravel -->
                 <div class="flex flex-col items-center mb-4 w-full sm:w-52">
                     <div
-                        class="bg-slate-800 p-6 rounded-lg shadow-xl transition hover:bg-red-900 hover:shadow-lg w-full flex-col">
+                        class="bg-slate-800 p-6 rounded-lg shadow-xl transition hover:bg-red-900 hover:shadow-red w-full flex-col">
                         <img class="h-24 mx-auto"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
                             alt="Laravel">
@@ -123,8 +123,8 @@
         </section>
 
         <!-- Section 4 - Projects -->
-        <p class="text-center text-6xl mb-12 mt-20 font-inter" id="projects">Mes projets</p>
-        <section class="flex flex-wrap w-8/12 mx-auto">
+        <p class="text-center md:text-6xl text-4xl mb-12 mt-20 font-inter" id="projects">Mes projets</p>
+        <section class="flex flex-wrap w-10/12 md:w-8/12 mx-auto">
             <!-- Première colonne pour les 3 premiers projets -->
             <div class="flex flex-col w-full md:w-1/2 px-2 mb-4">
                 <PortfolioItem v-for="(project, index) in projects.slice(0, 4)" :key="project.title" :project="project"
