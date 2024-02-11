@@ -12,7 +12,7 @@
                 <div class="flex justify-between mb-4 gap-4 md:gap-0 md:w-[80%]">
                     <span
                         class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded-lg md:rounded flex items-center mb-2 md:mb-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
@@ -24,8 +24,8 @@
                         </svg>Janvier 2024
                     </span>
                     <span
-                        class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center mb-2 md:mb-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="2"
+                    class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded-lg md:rounded flex items-center mb-2 md:mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
@@ -35,7 +35,7 @@
                     </span>
                     <span
                         class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center mb-2 md:mb-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
@@ -111,15 +111,15 @@
         </section>
 
 
-        <section class="my-20 mx-auto w-10/12 flex" id="project-details">
+        <section class="mt-20 mx-auto w-10/12 flex" id="project-details">
             <VerticalNavbarProductivity />
             <!-- phases du projet -->
             <div class="md:w-2/3 w-full ml-auto flex flex-col">
                 <!-- V.0 -->
                 <div class="mb-10 md:mb-20 w-full bg-gray-800 p-6 rounded-lg shadow-xl transition hover:bg-gray-700"
                     id="needsGathering">
-                    <div class="flex justify-between items-center mb-4">
-                        <p class="text-3xl font-semibold text-center">V.0 - MVP (En cours)</p>
+                    <div class="flex md:gap-8 gap-2 items-center mb-4 flex-wrap">
+                        <p class="text-2xl md:text-3xl font-semibold text-center flex-wrap">V.0 - MVP (En cours)</p>
                         <span class="text-xs bg-white text-green-800 py-1 px-3 rounded-full font-bold">EN COURS</span>
                     </div>
                     <p class="text-xl">La V.0 de ce projet comportera les keys features ainsi qu'une UX/UI simplifié
@@ -254,13 +254,11 @@
                             ergonomie optimale</li>
                     </ul>
                 </div>
-
-
             </div>
-        </section>"
+        </section>
 
     <!-- Call to Action -->
-    <section class="bg-slate-800 text-center p-10 mt-20">
+    <section class="bg-slate-800 text-center p-10">
         <h2 class="text-4xl text-white mb-4">Intéressé par un projet similaire ?</h2>
         <a href="https://www.linkedin.com/in/cl%C3%A9ment-e-a48865264/"
             class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Contactez-moi</a>
