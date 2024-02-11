@@ -1,17 +1,34 @@
 <template>
     <nav class="navmenu bg-slate-800 rounded-xl pr-4 max-h-[680px]">
         <ul class="">
-            <li class="mb-4" data-section="needsGathering"><a id="week1" href="#needsGathering">V.0 (MVP) </a></li>
-            <li class="my-4" data-section="functionnalities"><a id="week2" href="#functionnalities">V.1 </a></li>
-            <li class="my-4" data-section="technicalStack"><a id="week3" href="#technicalStack">V.2 </a></li>
-            <li class="my-4" data-section="MCD"><a id="week4" href="#MCD">V3</a></li>
-
-            <!--             <li class="my-4" data-section="wireframesMockups"><a id="week5" href="#wireframesMockups">Semaine 5 </a></li>
-            <li class="my-4" data-section="backoffice"><a id="week6" href="#backoffice">Semaine 6 </a></li>
-            <li class="mt-4" data-section="userInterface"><a id="week7" href="#userInterface">Semaine 7 </a></li> -->
+            <li class="mb-4" data-section="needsGathering">
+                <a id="week1" href="#needsGathering" class="block md:inline-block">
+                    <span class="hidden md:inline">V.0 (MVP)</span>
+                    <span class="hidden">V.0</span>
+                </a>
+            </li>
+            <li class="my-4" data-section="functionnalities">
+                <a id="week2" href="#functionnalities" class="block md:inline-block">
+                    <span class="hidden md:inline">V.1</span>
+                    <span class="hidden">V.1</span>
+                </a>
+            </li>
+            <li class="my-4" data-section="technicalStack">
+                <a id="week3" href="#technicalStack" class="block md:inline-block">
+                    <span class="hidden md:inline">V.2</span>
+                    <span class="hidden">V.2</span>
+                </a>
+            </li>
+            <li class="my-4" data-section="MCD">
+                <a id="week4" href="#MCD" class="block md:inline-block">
+                    <span class="hidden md:inline">V3</span>
+                    <span class="hidden">V3</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </template>
+
 
 <script>
 export default {

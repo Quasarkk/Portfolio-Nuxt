@@ -3,28 +3,35 @@
         <ParticlesBackground class="" />
         <!-- Section 1 -->
         <section
-            class="flex justify-between w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 hover:bg-gradient-to-r p-10 rounded-xl shadow-lg  bg-cover bg-blend-multiply">
-            <p class="text-4xl ">Bonjour je suis Clément,
-                <span class="bg-gradient-to-r from-sky-500 to-blue-300 text-4xl font-semibold bg-clip-text text-transparent"
-                    ref="typewriterText"></span>
-                <span class="inline-block w-1 animate-blink">|</span>
-                <br><br>
-                <span class="text-2xl">
-                    Moi c'est Clément, jeune developpeur fullstack. J'aime construire des applications, peaufiner l'UI et
-                    trouver des solutions techniques.
-                </span>
-                <br><br>
-                <span class="text-2xl">
-                    Scrollez pour en savoir plus !
-                </span>
-            </p>
-            <img class="w-[800px] rounded-lg" src="~/assets/pp_github.png">
+            class="mx-auto my-32 p-10 rounded-xl shadow-lg bg-cover bg-blend-multiply bg-gradient-to-r from-slate-800 to-slate-900 hover:bg-gradient-to-r w-11/12 md:w-10/12">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div>
+                    <p class="text-3xl md:text-4xl">Bonjour je suis Clément,
+                        <span
+                            class="bg-gradient-to-r from-sky-500 to-blue-300 text-3xl md:text-4xl font-semibold bg-clip-text text-transparent"
+                            ref="typewriterText"></span>
+                        <span class="inline-block w-1 animate-blink">|</span>
+                        <br><br>
+                        <span class="text-xl md:text-2xl">
+                            Moi c'est Clément, jeune developpeur fullstack. J'aime construire des applications, peaufiner
+                            l'UI et
+                            trouver des solutions techniques.
+                        </span>
+                        <br><br>
+                        <span class="text-xl md:text-2xl">
+                            Scrollez pour en savoir plus !
+                        </span>
+                    </p>
+                </div>
+                <img class="w-full max-w-xs md:max-w-lg rounded-lg mt-4 md:mt-0" src="~/assets/pp_github.png">
+            </div>
         </section>
 
+
         <!-- Section 2  -->
-        <section class="w-10/12 mx-auto font-inter text-center my-20">
-            <h2 class="text-6xl mb-10 text-white">En moins d'un an</h2>
-            <div class="grid grid-cols-3 gap-4">
+        <section class="mx-auto my-32 p-10 rounded-xl  bg-cover bg-blend-multiply">
+            <h2 class="text-4xl md:text-6xl mb-10 text-white text-center">En moins d'un an</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <!-- Carte 1 : Projets -->
                 <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-slate-700">
                     <div class="flex justify-center items-center">
@@ -74,63 +81,63 @@
             </div>
         </section>
 
-        <!-- Section 3  -->
-        <section class="w-8/12 mx-auto mt-20 mb-12">
-            <h2 class="text-6xl text-center text-white mt-20 mb-12">Mes compétences</h2>
-            <div class="flex justify-between">
+        <!-- Section 3 -->
+        <section class="mx-auto mt-20 mb-12 px-4 sm:w-8/12">
+            <h2 class="text-3xl sm:text-6xl text-center text-white mt-20 mb-12">Mes compétences</h2>
+            <div class="flex flex-wrap justify-between">
                 <!-- Vue.js -->
-                <div class="flex flex-col items-center w-52">
+                <div class="flex flex-col items-center mb-4 w-full sm:w-52">
                     <div
-                        class="bg-slate-800 p-6 rounded-lg shadow-test transition hover:bg-green-900 hover:shadow-green w-full flex-col">
+                        class="bg-slate-800 p-6 rounded-lg shadow-xl transition hover:bg-green-900 hover:shadow-lg w-full flex-col">
                         <img class="h-24 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png"
                             alt="Vue.js">
-                        <p class="text-2xl text-white mt-6 mb-1 justify-center flex">Vue.js</p>
-                        <p class="text-xl text-slate-300 justify-center flex">5 projets</p>
+                        <p class="text-xl sm:text-2xl text-white mt-6 mb-1 justify-center flex">Vue.js</p>
+                        <p class="text-lg sm:text-xl text-slate-300 justify-center flex">5 projets</p>
                     </div>
                 </div>
 
-
                 <!-- Laravel -->
-                <div class="flex flex-col items-center w-52">
+                <div class="flex flex-col items-center mb-4 w-full sm:w-52">
                     <div
-                        class="bg-slate-800 p-6 rounded-lg shadow-test transition hover:bg-red-900 hover:shadow-red w-full flex-col">
+                        class="bg-slate-800 p-6 rounded-lg shadow-xl transition hover:bg-red-900 hover:shadow-lg w-full flex-col">
                         <img class="h-24 mx-auto"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
                             alt="Laravel">
-                        <p class="text-2xl text-white mt-6 mb-1 justify-center flex">Laravel</p>
-                        <p class="text-xl text-slate-300 justify-center flex">4 projets</p>
+                        <p class="text-xl sm:text-2xl text-white mt-6 mb-1 justify-center flex">Laravel</p>
+                        <p class="text-lg sm:text-xl text-slate-300 justify-center flex">4 projets</p>
                     </div>
                 </div>
 
                 <!-- Tailwind -->
-                <div class="flex flex-col items-center w-52">
+                <div class="flex flex-col items-center mb-4 w-full sm:w-52">
                     <div
-                        class="bg-slate-800 group p-6 rounded-lg shadow-test hover:shadow-blue transition hover:bg-sky-900 w-full">
+                        class="bg-slate-800 group p-6 rounded-lg shadow-xl hover:shadow-blue transition hover:bg-sky-900 w-full">
                         <img class="h-24 mx-auto"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
                             alt="Tailwind">
-                        <p class="text-2xl mt-6 mb-1 text-white justify-center flex">Tailwind</p>
-                        <p class="text-xl text-slate-300 justify-center flex">7 projets</p>
+                        <p class="text-xl sm:text-2xl mt-6 mb-1 text-white justify-center flex">Tailwind</p>
+                        <p class="text-lg sm:text-xl text-slate-300 justify-center flex">7 projets</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 4 - Projets -->
+        <!-- Section 4 - Projects -->
         <p class="text-center text-6xl mb-12 mt-20 font-inter" id="projects">Mes projets</p>
-        <section class="flex w-8/12 mx-auto">
+        <section class="flex flex-wrap w-8/12 mx-auto">
             <!-- Première colonne pour les 3 premiers projets -->
-            <div class="flex-col w-1/2 mx-2">
+            <div class="flex flex-col w-full md:w-1/2 px-2 mb-4">
                 <PortfolioItem v-for="(project, index) in projects.slice(0, 4)" :key="project.title" :project="project"
                     :index="index" :class="getItemHeightClass(index)" />
             </div>
 
             <!-- Seconde colonne pour les 3 projets suivants -->
-            <div class="flex-col w-1/2">
+            <div class="flex flex-col w-full md:w-1/2 px-2 mb-4">
                 <PortfolioItem v-for="(project, index) in projects.slice(4, 7)" :key="project.title" :project="project"
                     :index="index" :class="getItemHeightClass(index + 3)" />
             </div>
         </section>
+
     </div>
 </template>
 
@@ -145,8 +152,6 @@ import projectDarkestDungeonImage from '~/assets/project-darkestdungeon.png';
 import projectAtelierdusudImage from '~/assets/project-atelierdusud.png';
 import projectOnerepImage from '~/assets/project-onerep.png';
 import projectAllyImage from '~/assets/project-ally.png';
-
-
 
 export default {
     components: {
@@ -236,16 +241,17 @@ export default {
         },
         getItemHeightClass(index) {
             // Vous pouvez définir vos hauteurs personnalisées ici
-            const heights = [
-                'h-[500px]', // Index 0
-                'h-[450px]', // Index 1
-                'h-[500px]', // Index 2
-                'h-[650px]', // Index 3
-                'h-[550px]', // Index 4
-                'h-[650px]', // Index 5
-                'h-[450px]', // Index 6
-            ];
-            return heights[index % heights.length]; // Cette ligne assure que si vous avez plus d'éléments que de hauteurs, cela recommencera à partir de 0
+            const heights = {
+                '0': 'h-auto sm:h-[500px]',
+                '1': 'h-auto sm:h-[450px]',
+                '2': 'h-auto sm:h-[500px]',
+                '3': 'h-auto sm:h-[650px]',
+                '4': 'h-auto sm:h-[550px]',
+                '5': 'h-auto sm:h-[650px]',
+                '6': 'h-auto sm:h-[450px]',
+            }
+                ;
+            return heights[index % Object.keys(heights).length]; // Loop through heights for each index
         },
 
         scrollToTop() {
