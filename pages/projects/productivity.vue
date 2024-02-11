@@ -3,16 +3,16 @@
         <ParticlesBackground class="" />
 
         <section
-            class="flex flex-col md:flex-row justify-between w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 p-10 rounded-xl shadow-lg bg-cover bg-blend-multiply">
+            class="flex flex-col md:flex-row justify-between w-11/12 md:w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 md:p-10 p-4 rounded-xl shadow-lg bg-cover bg-blend-multiply">
             <div class="md:w-1/2">
-                <div class="flex flex-row items-center mb-4">
+                <div class="flex flex-row flex-wrap items-center mb-4">
                     <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Productivity</h1>
-                    <span class="text-xs bg-white text-slate-800 md:py-2 md:px-6 py-1 px-2 rounded-full font-bold ml-4">EN COURS</span>
+                    <span class="text-xs bg-white text-slate-800 md:py-2 md:px-6 py-1 px-2 rounded-full font-bold md:ml-4 ml-2">EN COURS</span>
                 </div>
                 <div class="flex justify-between mb-4 gap-4 md:gap-0 md:w-[80%]">
                     <span
                         class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded-lg md:rounded flex items-center mb-2 md:mb-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
@@ -25,7 +25,7 @@
                     </span>
                     <span
                         class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center mb-2 md:mb-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 24 24" stroke-width="2"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="2"
                             stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
@@ -35,7 +35,7 @@
                     </span>
                     <span
                         class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center mb-2 md:mb-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
@@ -116,7 +116,7 @@
             <!-- phases du projet -->
             <div class="md:w-2/3 w-full ml-auto flex flex-col">
                 <!-- V.0 -->
-                <div class="mb-10 w-full bg-gray-800 p-6 rounded-lg shadow-xl transition hover:bg-gray-700"
+                <div class="mb-10 md:mb-20 w-full bg-gray-800 p-6 rounded-lg shadow-xl transition hover:bg-gray-700"
                     id="needsGathering">
                     <div class="flex justify-between items-center mb-4">
                         <p class="text-3xl font-semibold text-center">V.0 - MVP (En cours)</p>
@@ -137,7 +137,7 @@
 
                 <!-- Visualisation des Tâches -->
                 <div
-                    class="mb-20 w-full md:w-2/3 bg-gray-800 p-6 md:h-[400px] rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+                    class="mb-5 md:mb-12 w-full md:w-2/3 bg-gray-800 p-6 md:h-[400px] rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
                     <p class="text-3xl font-semibold text-center mb-8">Visualisation des tâches</p>
                     <p class="text-xl">L'un des points forts de la V.0 est la visualisation claire des tâches au sein des
                         routines établies. En fournissant un aperçu rapide et précis des activités quotidiennes,
@@ -151,7 +151,7 @@
 
                 <!-- Création de Routines et de Tâches -->
                 <div
-                    class="w-full md:w-2/3 my-20 ml-auto bg-gray-800 p-6 md:h-[400px] rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+                    class="w-full md:w-2/3 mb-5 md:mb-12 ml-auto bg-gray-800 p-6 md:h-[400px] rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
                     <p class="text-3xl font-semibold text-center mb-8">Création de routines et de tâches</p>
                     <p class="text-xl">La création intuitive de routines et de tâches est au cœur de la V.0, permettant aux
                         utilisateurs de construire et de personnaliser leur système de productivité avec des interactions
@@ -165,7 +165,7 @@
 
                 <!-- Création d'Objectifs et de Sous-Objectifs -->
                 <div
-                    class="w-full md:w-2/3 my-20 bg-gray-800 p-6 md:h-[400px] rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
+                    class="w-full md:w-2/3 mb-5 md:mb-12 bg-gray-800 p-6 md:h-[400px] rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
                     <p class="text-3xl font-semibold text-center mb-8">Création d'objectifs et de sous-objectifs</p>
                     <p class="text-xl">Cette version initiale facilite la définition d'objectifs et de sous-objectifs,
                         permettant aux utilisateurs de tracer une feuille de route claire vers leurs ambitions, soutenue par
@@ -176,10 +176,10 @@
                         <li class="list-disc marker:text-sky-400">Liaison des objectifs avec des routines spécifiques</li>
                     </ul>
                 </div>
-                <div class="my-10 border-t-4 rounded-full border-slate-400"></div>
+                <div class="mb-12 border-t-4 rounded-full border-slate-400"></div>
 
                 <!-- V.1 -->
-                <div class="mb-10 w-full bg-gray-800 p-6 rounded-lg shadow-xl transition hover:bg-gray-700"
+                <div class="mb-5 md:mb-12 w-full bg-gray-800 p-6 rounded-lg shadow-xl transition hover:bg-gray-700"
                     id="functionnalities">
                     <div class="flex justify-between items-center mb-4">
                         <p class="text-3xl font-semibold text-center">V.1 - App Personnalisée</p>
@@ -201,11 +201,11 @@
                             écoulée</li>
                     </ul>
                 </div>
-                <div class="my-10 border-t-4 rounded-full border-slate-400"></div>
+                <div class="mb-12 border-t-4 rounded-full border-slate-400"></div>
 
 
                 <!-- V.2 -->
-                <div class="mb-20 w-full bg-gray-800 p-6 md:h-[400px] rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700"
+                <div class="mb-5 md:mb-12 w-full bg-gray-800 p-6 md:h-[400px] rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700"
                     id="technicalStack">
                     <div class="flex justify-between items-center mb-4">
                         <p class="text-3xl font-semibold text-center">V.2 - SAAS</p>
@@ -225,7 +225,7 @@
                             intuitive</li>
                     </ul>
                 </div>
-                <div class="my-10 border-t-4 rounded-full border-slate-400"></div>
+                <div class="mb-12 border-t-4 rounded-full border-slate-400"></div>
 
                 <!-- V.3 -->
                 <div class="mb-20 w-full bg-gray-800 p-6 md:h-[400px] rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700"

@@ -1,9 +1,9 @@
 <template>
-  <div class=" cursor-none focus:cursor-none hover:cursor-none ">
+  <div class=" cursor-none focus:cursor-none hover:cursor-none max-w-screen">
     <NuxtLayout>
       <header
         class="w-full top-0 fixed mx-auto bg-slate-900/60 backdrop-blur-md text-slate-100 border-b-2 border-slate-600 z-50">
-        <nav class="w-10/12 flex justify-between h-16 mx-auto font-inter font-semibold">
+        <nav class="md:w-10/12 w-11/12 flex justify-between h-16 mx-auto font-inter font-semibold">
           <NuxtLink to="/" class="text-4xl my-auto font-audiowide">Quasark</NuxtLink>
           <ul class="flex justify-between w-6/12 my-auto">
             <li>
