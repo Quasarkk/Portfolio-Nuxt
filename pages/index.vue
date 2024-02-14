@@ -145,13 +145,13 @@
 import PortfolioItem from '~/components/PortfolioItem.vue';
 import ParticlesBackground from '~/components/ParticlesBackground.vue';
 
-import projectProductivityImage from '~/assets/project-productivity.png';
-import projectPortfolioImage from '~/assets/project-portfolio.png';
-import projectBunkerImage from '~/assets/project-bunker.png';
-import projectDarkestDungeonImage from '~/assets/project-darkestdungeon.png';
-import projectAtelierdusudImage from '~/assets/project-atelierdusud.png';
-import projectOnerepImage from '~/assets/project-onerep.png';
-import projectAllyImage from '~/assets/project-ally.png';
+import projectProductivityImage from '~/assets/project-productivity.webp';
+import projectPortfolioImage from '~/assets/project-portfolio.webp';
+import projectBunkerImage from '~/assets/project-bunker.webp';
+import projectDarkestDungeonImage from '~/assets/project-darkestdungeon.webp';
+import projectAtelierdusudImage from '~/assets/project-atelierdusud.webp';
+import projectOnerepImage from '~/assets/project-onerep.webp';
+import projectAllyImage from '~/assets/project-ally.webp';
 
 export default {
     components: {
