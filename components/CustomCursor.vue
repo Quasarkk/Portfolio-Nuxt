@@ -79,6 +79,16 @@
     This CSS file was created by OwL for use by pointer.js, 
     which can be found on https://seattleowl.com. 
   */
+    /* Masque le curseur personnalisé sur les appareils tactiles */
+    @media (hover: none) and (pointer: coarse) {
+      #pointer-dot, #pointer-ring {
+        display: none;
+      }
+  
+      html, a {
+        cursor: auto !important;
+      }
+    }
   
   #pointer-dot {
     left: 0;
