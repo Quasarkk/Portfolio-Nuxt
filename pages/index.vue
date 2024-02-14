@@ -23,7 +23,7 @@
                         </span>
                     </p>
                 </div>
-                <img class="w-full max-w-xs md:max-w-lg rounded-lg mt-4 md:mt-0" src="~/assets/pp_github.png">
+                <img class="w-full max-w-xs md:max-w-lg rounded-lg mt-4 md:mt-0" src="~/assets/pp_github.webp">
             </div>
         </section>
 
