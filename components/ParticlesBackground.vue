@@ -102,7 +102,6 @@ const options = {
 };
 
 const onLoad = (container: Container) => {
-    container.pause();
-    setTimeout(() => container.play(), 2000);
+    container.play(); // Play the animation immediately once loaded
 };
 </script>
