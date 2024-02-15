@@ -229,17 +229,16 @@
                 </div>
             </div>
         </section>
-
         <!-- Mockup modal -->
         <div v-if="isOpenMockup" @click="isOpenMockup = false"
             class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
-            <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-8/12">
-                <div class="flex flex-col md:flex-row justify-around items-center md:items-start">
-                    <img :src="allyWireframeImage" class="md:w-60 w-full h-auto mx-auto my-4 rounded-lg">
-                    <img :src="allyMaquetteImage" class="md:w-52 w-full h-auto mx-auto my-4 rounded-lg">
+            <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-full md:w-8/12">
+                <div class="flex flex-row justify-around items-center md:items-start space-x-1 mx-auto">
+                    <img :src="allyWireframeImage" class="h-96 md:w-60 md:h-[10%] my-auto rounded-lg">
+                    <img :src="allyMaquetteImage" class="h-96 md:w-60 md:h-[10%] my-auto rounded-lg">
                 </div>
                 <a class="text-slate-100 text-lg md:text-xl mx-auto mt-4 mb-8 md:mb-4 border-2 border-sky-400 px-3 md:px-4 py-1 md:py-2 rounded-xl flex items-center justify-center transition duration-300 ease-in-out hover:bg-sky-400 hover:text-slate-800 w-max"
-                href="https://www.figma.com/file/4qAdBRyIAqw0mHNm1OJD8c/LGBT?type=design&node-id=51-7&mode=design&t=CKaZgB6UgXrnYvxX-00">
+                    href="https://www.figma.com/file/4qAdBRyIAqw0mHNm1OJD8c/LGBT?type=design&node-id=51-7&mode=design&t=CKaZgB6UgXrnYvxX-00">
                     Lien vers Figma
                     <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" width="20" height="20" viewBox="0 0 24 24"
                         stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -251,6 +250,7 @@
                 </a>
             </div>
         </div>
+
 
 
         <!-- Call to Action -->

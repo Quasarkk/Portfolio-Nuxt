@@ -29,7 +29,7 @@
 
 
         <!-- Section 2  -->
-        <section class="mx-auto my-32 p-10 rounded-xl  bg-cover bg-blend-multiply">
+        <section class="mx-auto my-32 w-11/12 md:w-10/12 rounded-xl  bg-cover bg-blend-multiply">
             <h2 class="text-4xl md:text-6xl mb-10 text-white text-center">En moins d'un an</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <!-- Carte 1 : Projets -->
@@ -124,7 +124,7 @@
 
         <!-- Section 4 - Projects -->
         <p class="text-center md:text-6xl text-4xl mb-12 mt-20 font-inter" id="projects">Mes projets</p>
-        <section class="flex flex-wrap w-10/12 md:w-8/12 mx-auto">
+        <section class="flex flex-wrap w-11/12 md:w-8/12 mx-auto">
             <!-- Première colonne pour les 3 premiers projets -->
             <div class="flex flex-col w-full md:w-1/2 px-2 mb-4">
                 <PortfolioItem v-for="(project, index) in projects.slice(0, 4)" :key="project.title" :project="project"

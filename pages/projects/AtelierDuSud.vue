@@ -45,7 +45,7 @@
               <path d="M3 13a20 20 0 0 0 18 0" />
             </svg>Stage final</span>
         </div>
-        
+
         <p class="text-xl md:text-2xl text-slate-300 mb-6">
           Une application web et un site vitrine destiné à un lieu associatif réalisé dans le cadre de mon stage de fin de
           parcours.<br>Scrollez pour en savoir plus !
@@ -228,21 +228,21 @@
     <!-- Modale pour LDM -->
     <div v-if="isOpenLdm" @click="isOpenLdm = false"
       class="fixed inset-0 bg-black/50 p-4 flex justify-center items-center z-50">
-      <div @click.stop class=" p-4 rounded shadow-lg max-w-4xl w-full mx-auto">
+      <div @click.stop class="bg-white p-4 rounded shadow-lg max-w-4xl w-full mx-auto">
         <img src="@/assets/atelierdusud/ldm.png" class="w-full h-auto max-w-4xl rounded-lg" />
         <button @click="isOpenLdm = false" class="absolute top-0 right-0 m-2 text-black">&times;</button>
       </div>
     </div>
 
-
     <!-- Mockup modal -->
     <div v-if="isOpenMockup" @click="isOpenMockup = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
-      <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-8/12">
-        <div class="flex flex-col md:flex-row justify-around items-center md:items-start">
-          <img src="@/assets/atelierdusud/wireframe.png" class="max-w-full md:max-w-md mx-auto my-4 rounded-lg">
-          <img src="@/assets/atelierdusud/mockup.png" class="max-w-full md:max-w-md mx-auto my-4 rounded-lg">
+      <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-full md:w-8/12">
+        <div class="flex flex-col md:flex-row justify-around items-center space-x-0 md:space-x-2 mx-auto md:gap-8">
+          <img src="@/assets/atelierdusud/wireframe.png" class="w-4/6 md:w-2/3 my-2 md:my-auto rounded-lg">
+          <img src="@/assets/atelierdusud/mockup.png" class="w-4/6 md:w-2/3 my-2 md:my-auto rounded-lg">
         </div>
+
         <a class="text-slate-100 text-lg md:text-xl mx-auto mt-4 mb-8 md:mb-4 border-2 border-sky-400 px-3 md:px-4 py-1 md:py-2 rounded-xl flex items-center justify-center transition duration-300 ease-in-out hover:bg-sky-400 hover:text-slate-800 w-max"
           href="https://www.figma.com/file/nSYyc7EKrQNqf4HmBGQfkI/Caf%C3%A9-du-sud?type=design&node-id=0%3A1&mode=design&t=oPg9zfnbGZkTvZqS-1">
           Lien vers Figma
@@ -257,8 +257,6 @@
       </div>
     </div>
 
-
-
     <!-- Backoffice modal -->
     <div v-if="isOpenBackoffice" @click="isOpenBackoffice = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
@@ -272,9 +270,9 @@
     <div v-if="isOpenUserinterface" @click="isOpenUserinterface = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
       <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-8/12">
-        <div class="flex flex-col md:flex-row justify-around items-center md:items-start">
-          <img src="@/assets/atelierdusud/3nextevents.png" class="max-w-full md:max-w-md mx-auto my-4 rounded-lg">
-          <img src="@/assets/atelierdusud/contact.png" class="max-w-full md:max-w-md mx-auto my-4 rounded-lg">
+        <div class="flex flex-col md:flex-row justify-around items-center md:items-start md:gap-8">
+          <img src="@/assets/atelierdusud/3nextevents.png" class="max-w-full md:w-2/3 mx-auto my-4 rounded-lg">
+          <img src="@/assets/atelierdusud/contact.png" class="max-w-full md:w-2/3 mx-auto my-4 rounded-lg">
         </div>
       </div>
     </div>

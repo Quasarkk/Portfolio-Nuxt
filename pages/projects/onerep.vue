@@ -99,7 +99,7 @@
                     </a>
                 </div>
             </div>
-            <img class="md:w-[200px] w-full mt-4 md:mt-0 rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
+            <img class="md:w-[200px] w-40 mx-auto mt-4 md:mt-0 rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
                 :src="exercisesImage">
         </section>
 
@@ -154,19 +154,19 @@
                         globale n'ait pas atteint son terme. Utilisant Vue.js pour le frontend et Laravel pour le backend,
                         l'interface a été conçue pour gérer les données avec agilité, facilitant la création, la
                         modification, et la suppression d'entrées de manière dynamique et sans rechargement de page.</p>
-                    <img class="w-8/12 mt-8 mx-auto rounded-lg" src="@/assets/onerep/onerep-modal.png">
+                    <img class="w-8/12 md:w-60 mt-8 mx-auto rounded-lg" src="@/assets/onerep/onerep-modal.png">
                 </button>
 
                 <!-- SPA -->
                 <button @click="openModalSpa()"
-                    class="mb-10 md:mb-20 bg-gray-800 p-6  md:w-2/3 ml-auto rounded-lg shadow-xl transition hover:bg-gray-700"
+                    class="mb-10 md:mb-20 bg-gray-800 p-6  md:w-2/3 rounded-lg shadow-xl transition hover:bg-gray-700"
                     id="backoffice">
                     <p class="text-2xl md:text-3xl font-semibold text-center mb-4">Application Monopage</p>
                     <p class="text-xl text-left"> Le cœur de l'application réside dans son architecture monopage. Cette
                         approche permet de naviguer
                         entre les différentes fonctionnalités sans chargement de pages supplémentaires, rendant l'expérience
                         utilisateur rapide et réactive, et réduisant le temps d'attente pour l'utilisateur.</p>
-                    <img src="@/assets/onerep/homepage.png" class="w-8/12 mt-8 mx-auto rounded-lg">
+                    <img src="@/assets/onerep/homepage.png" class="w-8/12 md:w-60 mt-8 mx-auto rounded-lg">
                 </button>
 
             </div>
@@ -270,36 +270,19 @@
             </div>
         </section>
 
-        <!-- Modale image CRUD -->
-        <button v-if="isOpenCrud" @click="closeModalCrud()"
-            class="fixed inset-0 bg-black/50 p-4 flex justify-center items-center z-50">
-            <div @click.stop class=" p-4 rounded shadow-lg max-w-4xl w-full mx-auto">
-                <img :src="crudImage" class="w-full h-auto max-w-4xl rounded-lg" />
-                <button @click="isOpenLdm = false" class="absolute top-0 right-0 m-2 text-black">&times;</button>
-            </div>
-        </button>
-
-
-        <!-- Modale image SPA -->
-        <button v-if="isOpenSpa" @click="closeModalSpa()"
-            class="fixed inset-0 bg-black/50 p-4 flex justify-center items-center z-50">
-            <div @click.stop class=" p-4 rounded shadow-lg max-w-4xl w-full mx-auto">
-                <img :src="spaImage" class="w-full h-auto max-w-4xl rounded-lg" />
-                <button @click="isOpenLdm = false" class="absolute top-0 right-0 m-2 text-black">&times;</button>
-            </div>
-        </button>
 
 
         <!-- Mockup modal -->
         <button v-if="isOpenWireframe" @click="closeModalWireframe()"
-            class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
-            <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-8/12">
-                <div class="flex flex-col md:flex-row justify-around items-center md:items-start">
-                    <img :src="wireframeImage1" class="max-w-full md:max-w-md mx-auto my-4 rounded-lg">
-                    <img :src="wireframeImage2" class="max-w-full md:max-w-md mx-auto my-4 rounded-lg">
+            class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center w-full">
+            <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-full md:w-8/12">
+                <div class="flex flex-row justify-around items-center md:items-start mx-auto">
+                    <img :src="wireframeImage1" class="h-96 md:w-60 md:h-[10%] my-auto rounded-lg">
+                    <img :src="wireframeImage2" class="h-96 md:w-60 md:h-[10%] my-auto rounded-lg">
                 </div>
+
                 <a class="text-slate-100 text-lg md:text-xl mx-auto mt-4 mb-8 md:mb-4 border-2 border-sky-400 px-3 md:px-4 py-1 md:py-2 rounded-xl flex items-center justify-center transition duration-300 ease-in-out hover:bg-sky-400 hover:text-slate-800 w-max"
-                href="https://www.figma.com/file/ZSo4cG9oF8nnm3xcsPnJTz/Maquette-muscu?type=design&node-id=0-1&mode=design&t=V2ZsD7YAdqfPT3vn-0">
+                    href="https://www.figma.com/file/ZSo4cG9oF8nnm3xcsPnJTz/Maquette-muscu?type=design&node-id=0-1&mode=design&t=V2ZsD7YAdqfPT3vn-0">
                     Lien vers Figma
                     <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" width="20" height="20" viewBox="0 0 24 24"
                         stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -312,6 +295,21 @@
             </div>
         </button>
 
+        <!-- CRUD modal -->
+        <button v-if="isOpenCrud" @click="closeModalCrud()"
+            class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
+            <div @click.stop class="p-4 rounded-lg shadow-lg max-w-xl w-full mx-4">
+                <img :src="crudImage" class="max-w-full h-auto rounded-lg">
+            </div>
+        </button>
+
+        <!-- Modale image SPA -->
+        <button v-if="isOpenSpa" @click="closeModalSpa()"
+            class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
+            <div @click.stop class="p-4 rounded-lg shadow-lg max-w-xl w-full mx-4">
+                <img :src="spaImage" class="max-w-full h-auto rounded-lg">
+            </div>
+        </button>
 
         <!-- Call to Action -->
         <section class="bg-slate-800 text-center p-10 mt-20">
