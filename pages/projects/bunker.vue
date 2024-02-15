@@ -148,7 +148,7 @@
     <!-- Create modal -->
     <div v-if="isOpenCreate" @click="isOpenCreate = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
-      <div @click.stop class="p-4 rounded-lg shadow-lg max-w-xl w-full mx-4">
+      <div @click.stop class="p-4 rounded-lg max-w-xl w-full mx-4">
         <img :src="bunkerCreateImage" class="max-w-full h-auto rounded-lg">
       </div>
     </div>
@@ -156,7 +156,7 @@
     <!-- Edit modal -->
     <div v-if="isOpenEdit" @click="isOpenEdit = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
-      <div @click.stop class="p-4 rounded-lg shadow-lg max-w-xl w-full mx-4">
+      <div @click.stop class="p-4 rounded-lg max-w-xl w-full mx-4">
         <img :src="bunkerEditImage" class="max-w-full h-auto rounded-lg">
       </div>
     </div>
@@ -164,7 +164,7 @@
     <!-- Show modal -->
     <div v-if="isOpenShow" @click="isOpenShow = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
-      <div @click.stop class="p-4 rounded-lg shadow-lg max-w-xl w-full mx-4">
+      <div @click.stop class="p-4 rounded-lg max-w-xl w-full mx-4">
         <img :src="bunkerShowImage" class="max-w-full h-auto rounded-lg">
       </div>
     </div>

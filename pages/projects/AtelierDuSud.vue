@@ -228,7 +228,7 @@
     <!-- Modale pour LDM -->
     <div v-if="isOpenLdm" @click="isOpenLdm = false"
       class="fixed inset-0 bg-black/50 p-4 flex justify-center items-center z-50">
-      <div @click.stop class="bg-white p-4 rounded shadow-lg max-w-4xl w-full mx-auto">
+      <div @click.stop class="bg-white p-4 rounded max-w-4xl w-full mx-auto">
         <img src="@/assets/atelierdusud/ldm.png" class="w-full h-auto max-w-4xl rounded-lg" />
         <button @click="isOpenLdm = false" class="absolute top-0 right-0 m-2 text-black">&times;</button>
       </div>
@@ -260,7 +260,7 @@
     <!-- Backoffice modal -->
     <div v-if="isOpenBackoffice" @click="isOpenBackoffice = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
-      <div @click.stop class="p-4 rounded-lg shadow-lg max-w-xl w-full mx-4">
+      <div @click.stop class="p-4 rounded-lg max-w-xl w-full mx-4">
         <img src="@/assets/atelierdusud/backoffice.png" class="max-w-full h-auto rounded-lg">
       </div>
     </div>

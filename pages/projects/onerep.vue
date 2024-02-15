@@ -298,7 +298,7 @@
         <!-- CRUD modal -->
         <button v-if="isOpenCrud" @click="closeModalCrud()"
             class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
-            <div @click.stop class="p-4 rounded-lg shadow-lg max-w-xl w-full mx-4">
+            <div @click.stop class="p-4 rounded-lg max-w-xl w-full mx-4">
                 <img :src="crudImage" class="max-w-full h-auto rounded-lg">
             </div>
         </button>
@@ -306,7 +306,7 @@
         <!-- Modale image SPA -->
         <button v-if="isOpenSpa" @click="closeModalSpa()"
             class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
-            <div @click.stop class="p-4 rounded-lg shadow-lg max-w-xl w-full mx-4">
+            <div @click.stop class="p-4 rounded-lg max-w-xl w-full mx-4">
                 <img :src="spaImage" class="max-w-full h-auto rounded-lg">
             </div>
         </button>
