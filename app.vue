@@ -31,7 +31,7 @@
       </header>
 
       <CustomCursor />
-      <NuxtPage class="pt-16" />
+      <NuxtPage class="" />
     </NuxtLayout>
   </div>
 </template>
