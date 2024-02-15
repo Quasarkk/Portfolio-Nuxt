@@ -3,14 +3,32 @@
         <ParticlesBackground class="" />
 
         <!-- Hero Section -->
+        <!-- Hero Section -->
         <section
-            class="flex justify-between w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 p-10 rounded-xl shadow-lg bg-cover bg-blend-multiply">
-            <div>
-                <h1 class="text-5xl font-bold text-white mb-4">Onerep</h1>
-                <div class="flex space-x-4 mb-4">
-                    <span class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 -mt-0.5" width="24" height="24"
-                            viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+            class="flex flex-col md:flex-row justify-between w-11/12 md:w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 md:p-10 p-4 rounded-xl shadow-lg bg-cover bg-blend-multiply">
+            <div class="md:w-1/2">
+                <div class="flex flex-row flex-wrap items-center mb-4">
+                    <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Onerep</h1>
+                </div>
+                
+                <div class="flex justify-between mb-4 gap-4 md:gap-0 md:w-[80%]">
+                    <span
+                    class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded-lg md:rounded flex items-center mb-2 md:mb-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+                      <path d="M18 14v4h4" />
+                      <path d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                      <path d="M15 3v4" />
+                      <path d="M7 3v4" />
+                      <path d="M3 11h16" />
+                    </svg>Juillet - Août 2023
+                  </span>
+                    <span
+                        class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded-lg md:rounded flex items-center mb-2 md:mb-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-4 mr-2" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
                             stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
@@ -19,20 +37,11 @@
                             <path d="M15 3v4" />
                             <path d="M7 3v4" />
                             <path d="M3 11h16" />
-                        </svg>Juillet - Août
-                        2023</span>
-                    <span class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 -mt-0.5" viewBox="0 0 24 24"
-                            stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                            <path d="M12 12l3 -2" />
-                            <path d="M12 7v5" />
                         </svg>
                         2 mois
                     </span>
-                    <span class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center">
+                    <span
+                        class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center mb-2 md:mb-0">
                         <svg xmlns="http://www.w3.org/2000/svg" class="2 mois h-4 w-4 mr-1 -mt-0.5" width="24" height="24"
                             viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -43,31 +52,27 @@
                             <path d="M3 13a20 20 0 0 0 18 0" />
                         </svg>Projet de formation</span>
                 </div>
-                <p class="text-2xl text-slate-300 mb-6 w-[70%]">
-                    Un projet qui n'a pas abouti dans lequel je voulais réaliser une application de musculation.
-                    <br>Scrollez pour en savoir plus !
+                <p class="text-xl md:text-2xl text-slate-300 mb-6">
+                    Un projet qui n'a pas abouti dans lequel je voulais réaliser une application de musculation.<br>Scrollez
+                    pour en savoir plus !
                 </p>
-
-                <!-- Technology Stack Icons -->
-                <div class="flex justify-between mt-8 w-[70%]">
-                    <div class="flex items-center px-3 py-1 bg-slate-600 text-white font-semibold rounded-lg">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" class="h-6 mr-2"
-                            alt="Vue.js logo" />
-                        Vue.js
+                <div class="flex justify-between mb-4 gap-0 md:gap-0 md:w-[80%]">
+                    <div
+                        class="flex items-center px-2 py-1 bg-slate-600 text-white font-semibold rounded-lg m-1 text-xs md:text-base">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" class="h-4 mr-1"
+                            alt="Vue.js logo" />Vue.js
                     </div>
-                    <div class="flex items-center px-3 py-1 bg-slate-600 text-white font-semibold rounded-lg">
+                    <div
+                        class="flex items-center px-2 py-1 bg-slate-600 text-white font-semibold rounded-lg m-1 text-xs md:text-base">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
-                            class="h-6 mr-2" alt="Laravel logo" />
-                        Laravel
+                            class="h-4 mr-1" alt="Laravel logo" />Laravel
                     </div>
-                    <div class="flex items-center px-3 py-1 bg-slate-600 text-white font-semibold rounded-lg">
+                    <div
+                        class="flex items-center px-2 py-1 bg-slate-600 text-white font-semibold rounded-lg m-1 text-xs md:text-base">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
-                            class="h-6 mr-2" alt="Tailwind CSS logo" />
-                        Tailwind
+                            class="h-4 mr-1" alt="Tailwind CSS logo" />Tailwind
                     </div>
                 </div>
-
-                <!-- Figma + GitHub links -->
                 <div class="flex gap-8 mt-8">
                     <a href="https://www.figma.com/file/ZSo4cG9oF8nnm3xcsPnJTz/Maquette-muscu?type=design&node-id=0-1&mode=design&t=V2ZsD7YAdqfPT3vn-0"
                         class="group text-slate-400 underline-offset-2 decoration-2 hover:underline hover:font-bold hover:text-white flex items-center">
@@ -94,7 +99,7 @@
                     </a>
                 </div>
             </div>
-            <img class="w-[200px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
+            <img class="md:w-[200px] w-full mt-4 md:mt-0 rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
                 :src="exercisesImage">
         </section>
 

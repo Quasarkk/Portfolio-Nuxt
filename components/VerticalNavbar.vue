@@ -1,5 +1,5 @@
 <template>
-    <nav class="navmenu bg-slate-800 rounded-xl pr-4 max-h-[680px]">
+    <nav class="navmenu bg-slate-800 rounded-xl pr-4 max-h-[680px] hidden md:inline">
         <ul class="">
             <li class="mb-4" data-section="needsGathering"><a id="week1" href="#needsGathering"
                   >Semaine 1 </a></li>

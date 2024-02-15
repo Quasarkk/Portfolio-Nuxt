@@ -1,82 +1,85 @@
 <template>
   <div class="text-slate-100 font-inter scroll-smooth">
-    <ParticlesBackground class=""/>
+    <ParticlesBackground class="" />
 
-    <!-- Hero Section -->
-    <section class="flex justify-between w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 p-10 rounded-xl shadow-lg bg-cover bg-blend-multiply">
-      <div>
-          <h1 class="text-5xl font-bold text-white mb-4">Le bunker project</h1>
-          <div class="flex space-x-4 mb-4 w-full">
-            <span class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 -mt-0.5" width="24" height="24"
-                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-                <path d="M18 14v4h4" />
-                <path d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                <path d="M15 3v4" />
-                <path d="M7 3v4" />
-                <path d="M3 11h16" />
-              </svg>Juin
-              2023</span>
-            <span class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 -mt-0.5" viewBox="0 0 24 24" stroke-width="2"
-                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-                <path d="M12 12l3 -2" />
-                <path d="M12 7v5" />
-              </svg>
-              1 mois
-            </span>
-            <span class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" class="2 mois h-4 w-4 mr-1 -mt-0.5" width="24" height="24"
-                viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
-                stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
-                <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
-                <path d="M12 12l0 .01" />
-                <path d="M3 13a20 20 0 0 0 18 0" />
-              </svg>Projet de formation</span>
+    <!-- Hero Section for Bunker Project -->
+    <section
+      class="flex flex-col md:flex-row justify-between w-11/12 md:w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 md:p-10 p-4 rounded-xl shadow-lg bg-cover bg-blend-multiply">
+      <div class="md:w-1/2">
+        <div class="flex flex-row flex-wrap items-center mb-4">
+          <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Le bunker project</h1>
+        </div>
+        <div class="flex justify-between mb-4 gap-4 md:gap-0 md:w-[80%]">
+          <span
+            class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded-lg md:rounded flex items-center mb-2 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <rect x="3" y="4" width="18" height="12" rx="1" />
+              <line x1="7" y1="20" x2="17" y2="20" />
+              <line x1="9" y1="16" x2="9" y2="20" />
+              <line x1="15" y1="16" x2="15" y2="20" />
+              <path d="M8 12l3-3l2 2l3 -3" />
+            </svg>Juin 2023
+          </span>
+          <span
+            class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded-lg md:rounded flex items-center mb-2 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="12" cy="12" r="9" />
+              <polyline points="12 7 12 12 15 15" />
+            </svg>1 mois
+          </span>
+          <span
+            class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center mb-2 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
+              <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
+              <path d="M9.7 17l4.6 0" />
+            </svg>Projet de formation
+          </span>
+        </div>
+        <p class="text-xl md:text-2xl text-slate-300 mb-6">
+          Un projet de groupe qui n'a pas abouti dans lequel nous voulions réaliser une application de jeux de rôle. J'ai
+          néanmoins pu découvrir Laravel et Vue.<br>Scrollez pour en savoir plus !
+        </p>
+        <div class="flex justify-between mb-4 gap-0 md:gap-0 md:w-[80%]">
+          <div
+            class="flex items-center px-2 py-1 bg-slate-600 text-white font-semibold rounded-lg m-1 text-xs md:text-base">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" class="h-4 mr-1"
+              alt="Vue.js logo" />Vue.js
           </div>
-          <p class="text-2xl text-slate-300 mb-6 w-[90%]">
-              Un projet de groupe qui n'a pas abouti dans lequel nous voulions réaliser une application de jeux de rôle. J'ai néanmoins pu découvrir Laravel et Vue.
-              <br>Scrollez pour en savoir plus !
-          </p>
-  
-          <!-- Technology Stack Icons -->
-          <div class="flex justify-between mt-8 w-[85%]">
-              <div class="flex items-center px-3 py-1 bg-slate-600 text-white font-semibold rounded-lg">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" class="h-6 mr-2" alt="Vue.js logo" />
-                  Vue.js
-              </div>
-              <div class="flex items-center px-3 py-1 bg-slate-600 text-white font-semibold rounded-lg">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" class="h-6 mr-2" alt="Laravel logo" />
-                  Laravel
-              </div>
-              <div class="flex items-center px-3 py-1 bg-slate-600 text-white font-semibold rounded-lg">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png" class="h-6 mr-2" alt="Tailwind CSS logo" />
-                  Tailwind
-              </div>
+          <div
+            class="flex items-center px-2 py-1 bg-slate-600 text-white font-semibold rounded-lg m-1 text-xs md:text-base">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
+            class="h-4 mr-1" alt="Laravel logo" />Laravel
           </div>
-  
-          <!-- GitHub link -->
-          <div class="flex gap-8 mt-8">
+          <div class="flex items-center px-2 py-1 bg-slate-600 text-white font-semibold rounded-lg m-1 text-xs md:text-base">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
+              class="h-4 mr-1" alt="Tailwind CSS logo" />Tailwind
+          </div>
+        </div>
+            <div class="flex gap-8 mt-8">
               <a href="https://github.com/Cy-Bert/Bunker-Project/tree/CRUD-Tables"
-                  class="group text-slate-400 underline-offset-2 decoration-2 hover:underline hover:font-bold hover:text-white flex items-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-8 group-hover:stroke-white group-hover:stroke-2 stroke-slate-400 stroke-1" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                      <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"/>
-                  </svg>
-                  GitHub
+                class="group text-slate-400 underline-offset-2 decoration-2 hover:underline hover:font-bold hover:text-white flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="w-8 group-hover:stroke-white group-hover:stroke-2 stroke-slate-400 stroke-1" viewBox="0 0 24 24"
+                  fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+                </svg>
+                GitHub
               </a>
-          </div>
-      </div>
-      <img class="w-[800px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105" :src="bunkerImage">
-  </section>
-  
+            </div>
+        </div>
+        <img class="w-[800px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105" :src="bunkerImage">
+    </section>
+
 
     <h2 class="text-5xl text-center my-10">Le Projet en Détail</h2>
     <section class="my-20 mx-auto w-10/12 flex">
