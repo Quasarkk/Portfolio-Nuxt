@@ -44,9 +44,8 @@
               <path d="M12 12l0 .01" />
               <path d="M3 13a20 20 0 0 0 18 0" />
             </svg>Stage final</span>
-
-
         </div>
+        
         <p class="text-xl md:text-2xl text-slate-300 mb-6">
           Une application web et un site vitrine destiné à un lieu associatif réalisé dans le cadre de mon stage de fin de
           parcours.<br>Scrollez pour en savoir plus !
@@ -98,7 +97,6 @@
       <img
         class="md:w-[800px] w-full mt-4 md:mt-0 rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
         src="https://www.macommune.info/wp-content/uploads/2021/02/atelier-du-sud-jeanne-carasso-poitevin-002-1200x766.jpg">
-
     </section>
 
 
@@ -170,7 +168,7 @@
           class="mb-10 md:mb-20 bg-gray-800 md:w-2/3 p-6 rounded-lg shadow-xl transition hover:bg-gray-700"
           id="wireframesMockups">
           <p class="text-2xl md:text-3xl font-semibold text-center mb-4">Wireframing et maquettage</p>
-          <p class="text-xl text-left">Création de wireframes et application d'un design system pour une interface
+          <p class="text-xl ">Création de wireframes et application d'un design system pour une interface
             utilisateur cohérente.</p>
           <div class="flex w-full">
             <img src="@/assets/atelierdusud/wireframe.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg">
@@ -267,22 +265,22 @@
     <!-- Backoffice modal -->
     <div v-if="isOpenBackoffice" @click="isOpenBackoffice = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
-      <div @click.stop class="bg-white p-4 rounded-lg shadow-lg max-w-xl w-full mx-4">
+      <div @click.stop class="p-4 rounded-lg shadow-lg max-w-xl w-full mx-4">
         <img src="@/assets/atelierdusud/backoffice.png" class="max-w-full h-auto rounded-lg">
       </div>
     </div>
 
 
-        <!-- User Interface modal -->
-        <div v-if="isOpenUserinterface" @click="isOpenUserinterface = false"
-        class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
-        <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-8/12">
-          <div class="flex flex-col md:flex-row justify-around items-center md:items-start">
-            <img src="@/assets/atelierdusud/3nextevents.png" class="max-w-full md:max-w-md mx-auto my-4 rounded-lg">
-            <img src="@/assets/atelierdusud/contact.png" class="max-w-full md:max-w-md mx-auto my-4 rounded-lg">
-          </div>
+    <!-- User Interface modal -->
+    <div v-if="isOpenUserinterface" @click="isOpenUserinterface = false"
+      class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
+      <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-8/12">
+        <div class="flex flex-col md:flex-row justify-around items-center md:items-start">
+          <img src="@/assets/atelierdusud/3nextevents.png" class="max-w-full md:max-w-md mx-auto my-4 rounded-lg">
+          <img src="@/assets/atelierdusud/contact.png" class="max-w-full md:max-w-md mx-auto my-4 rounded-lg">
         </div>
       </div>
+    </div>
   </div>
 </template>
   

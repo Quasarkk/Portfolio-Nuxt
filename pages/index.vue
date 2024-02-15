@@ -3,7 +3,7 @@
         <ParticlesBackground class="" />
         <!-- Section 1 -->
         <section
-            class="mx-auto my-32 p-10 rounded-xl shadow-lg bg-cover bg-blend-multiply bg-gradient-to-r from-slate-800 to-slate-900 hover:bg-gradient-to-r w-11/12 md:w-10/12">
+            class="mx-auto my-32 p-6 rounded-xl shadow-lg bg-cover bg-blend-multiply bg-gradient-to-r from-slate-800 to-slate-900 hover:bg-gradient-to-r w-11/12 md:w-10/12">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div>
                     <p class="text-3xl md:text-4xl">Bonjour je suis Clément,
@@ -36,7 +36,7 @@
                 <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-slate-700">
                     <div class="flex justify-center items-center">
                         <p class="text-6xl text-white mr-2" ref="projectCounter">7</p>
-                        <p class="text-xl text-slate-300 mt-auto">projets</p>
+                        <p class="text-2xl text-slate-300 mt-auto">projets</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-12 text-sky-300" viewBox="0 0 24 24"
                         stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -52,7 +52,7 @@
                 <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-slate-700">
                     <div class="flex justify-center items-center">
                         <p class="text-6xl text-white mr-2" ref="nightCounter">12</p>
-                        <p class="text-xl text-slate-300 mt-auto">nuits blanches</p>
+                        <p class="text-2xl text-slate-300 mt-auto">nuits blanches</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-12 text-sky-300" viewBox="0 0 24 24"
                         stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -65,7 +65,7 @@
                 <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-slate-700">
                     <div class="flex justify-center items-center">
                         <p class="text-6xl text-white mr-2" ref="cafeCounter">439</p>
-                        <p class="text-xl text-slate-300 mt-auto">cafés</p>
+                        <p class="text-2xl text-slate-300 mt-auto">cafés</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-12 text-sky-300" viewBox="0 0 24 24"
                         stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -137,7 +137,6 @@
                     :index="index" :class="getItemHeightClass(index + 3)" />
             </div>
         </section>
-
     </div>
 </template>
 
@@ -164,101 +163,6 @@ export default {
         this.animateNumber(42, 'nightCounter', 2000); // Pour "42 nuits blanches"
         this.animateNumber(439, 'cafeCounter', 2000); // Pour "439 cafés"
     },
-    methods: {
-        handleMouseMove(e) {
-            const { offsetX, offsetY, target } = e;
-            const { clientWidth, clientHeight } = target;
-            const xPos = (offsetX / clientWidth) - 0.5;
-            const yPos = (offsetY / clientHeight) - 0.5;
-
-            const shadowX = 20 * xPos;
-            const shadowY = 20 * yPos;
-
-            target.style.boxShadow = `${shadowX}px ${shadowY}px 20px rgba(0, 0, 0, 0.3)`;
-        },
-        resetShadow(e) {
-            e.target.style.boxShadow = '';
-        },
-        addShadowEffectListeners() {
-            const cards = document.querySelectorAll('.shadow-test');
-            cards.forEach(card => {
-                card.addEventListener('mousemove', this.handleMouseMove);
-                card.addEventListener('mouseleave', this.resetShadow);
-            });
-        },
-        removeShadowEffectListeners() {
-            const cards = document.querySelectorAll('.shadow-test');
-            cards.forEach(card => {
-                card.removeEventListener('mousemove', this.handleMouseMove);
-                card.removeEventListener('mouseleave', this.resetShadow);
-            });
-        },
-
-        typewriterEffect() {
-            const phrases = ['Développeur', 'Créatif', 'Curieux'];
-            let currentPhrase = 0;
-            let currentChar = 0;
-            const typewriterText = this.$refs.typewriterText;
-            const eraseDelay = 35; // Délai avant d'effacer le texte
-            const typeDelay = 50; // Délai entre chaque caractère tapé
-            const nextPhraseDelay = 800; // Délai avant de taper la prochaine phrase
-
-            const typeChar = () => {
-                if (currentChar < phrases[currentPhrase].length) {
-                    typewriterText.textContent += phrases[currentPhrase].charAt(currentChar);
-                    currentChar++;
-                    setTimeout(typeChar, typeDelay);
-                } else {
-                    setTimeout(eraseChar, nextPhraseDelay);
-                }
-            };
-
-            const eraseChar = () => {
-                if (currentChar > 0) {
-                    typewriterText.textContent = phrases[currentPhrase].substring(0, currentChar - 1);
-                    currentChar--;
-                    setTimeout(eraseChar, eraseDelay);
-                } else {
-                    currentPhrase = (currentPhrase + 1) % phrases.length;
-                    setTimeout(typeChar, typeDelay);
-                }
-            };
-            typeChar();
-        },
-        animateNumber(target, refName, duration) {
-            let currentNumber = 0;
-            const startTime = new Date().getTime();
-            const endTime = startTime + duration;
-            const timer = setInterval(() => {
-                const now = new Date().getTime();
-                const remaining = Math.max((endTime - now) / duration, 0);
-                const value = Math.round(target - (remaining * target));
-                this.$refs[refName].innerText = value;
-                if (value === target) {
-                    clearInterval(timer);
-                }
-            }, 1000 / 60); // Mise à jour 60 fois par seconde
-        },
-        getItemHeightClass(index) {
-            // Vous pouvez définir vos hauteurs personnalisées ici
-            const heights = {
-                '0': 'h-auto sm:h-[500px]',
-                '1': 'h-auto sm:h-[450px]',
-                '2': 'h-auto sm:h-[500px]',
-                '3': 'h-auto sm:h-[650px]',
-                '4': 'h-auto sm:h-[550px]',
-                '5': 'h-auto sm:h-[650px]',
-                '6': 'h-auto sm:h-[450px]',
-            }
-                ;
-            return heights[index % Object.keys(heights).length]; // Loop through heights for each index
-        },
-
-        scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        },
-    },
-
     data() {
         return {
             typing: true,
@@ -349,5 +253,73 @@ export default {
             ]
         };
     },
+
+    methods: {
+        typewriterEffect() {
+            const phrases = ['Développeur', 'Créatif', 'Curieux'];
+            let currentPhrase = 0;
+            let currentChar = 0;
+            const typewriterText = this.$refs.typewriterText;
+            const eraseDelay = 35; // Délai avant d'effacer le texte
+            const typeDelay = 50; // Délai entre chaque caractère tapé
+            const nextPhraseDelay = 800; // Délai avant de taper la prochaine phrase
+
+            const typeChar = () => {
+                if (currentChar < phrases[currentPhrase].length) {
+                    typewriterText.textContent += phrases[currentPhrase].charAt(currentChar);
+                    currentChar++;
+                    setTimeout(typeChar, typeDelay);
+                } else {
+                    setTimeout(eraseChar, nextPhraseDelay);
+                }
+            };
+
+            const eraseChar = () => {
+                if (currentChar > 0) {
+                    typewriterText.textContent = phrases[currentPhrase].substring(0, currentChar - 1);
+                    currentChar--;
+                    setTimeout(eraseChar, eraseDelay);
+                } else {
+                    currentPhrase = (currentPhrase + 1) % phrases.length;
+                    setTimeout(typeChar, typeDelay);
+                }
+            };
+            typeChar();
+        },
+        animateNumber(target, refName, duration) {
+            let currentNumber = 0;
+            const startTime = new Date().getTime();
+            const endTime = startTime + duration;
+            const timer = setInterval(() => {
+                const now = new Date().getTime();
+                const remaining = Math.max((endTime - now) / duration, 0);
+                const value = Math.round(target - (remaining * target));
+                this.$refs[refName].innerText = value;
+                if (value === target) {
+                    clearInterval(timer);
+                }
+            }, 1000 / 60); // Mise à jour 60 fois par seconde
+        },
+        getItemHeightClass(index) {
+            // Vous pouvez définir vos hauteurs personnalisées ici
+            const heights = {
+                '0': 'h-auto sm:h-[500px]',
+                '1': 'h-auto sm:h-[450px]',
+                '2': 'h-auto sm:h-[500px]',
+                '3': 'h-auto sm:h-[650px]',
+                '4': 'h-auto sm:h-[550px]',
+                '5': 'h-auto sm:h-[650px]',
+                '6': 'h-auto sm:h-[450px]',
+            }
+                ;
+            return heights[index % Object.keys(heights).length]; // Loop through heights for each index
+        },
+
+        scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        },
+    },
+
+
 };
 </script>
