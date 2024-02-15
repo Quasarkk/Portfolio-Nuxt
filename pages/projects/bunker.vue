@@ -81,14 +81,9 @@
       <img class="w-[800px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105" :src="bunkerImage">
     </section>
 
-
-    <h2 class="text-5xl text-center my-10">Le Projet en Détail</h2>
     <section class="my-20 mx-auto w-10/12 flex">
-
-
       <!-- phases du projet -->
       <div class="border-red flex flex-col">
-
         <!-- Summary -->
         <div class="mb-10 md:mb-20 md:w-2/3 bg-gray-800 p-6 rounded-lg shadow-xl transition hover:bg-gray-700">
           <p class="text-2xl md:text-3xl font-semibold text-center mb-4">Résumé du projet</p>
