@@ -94,7 +94,6 @@
                 <!-- Summary -->
                 <div
                     class="mb-20 w-full bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
-                    <p class="text-3xl font-semibold text-center mb-8">Résumé du projet</p>
                     <p class="text-xl leading-relaxed">Dans le cadre de ce projet nous avons réalisé dans un groupe de 5 un
                         site vitrine
                         pour une association fictive en simulation d'agence dans laquelle mon
@@ -236,8 +235,8 @@
             class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
             <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-8/12">
                 <div class="flex flex-col md:flex-row justify-around items-center md:items-start">
-                    <img :src="allyWireframeImage" class="w-60 h-[10%] mx-auto my-auto rounded-lg">
-                    <img :src="allyMaquetteImage" class="w-52 h-[10%] mx-auto my-auto rounded-lg">
+                    <img :src="allyWireframeImage" class="md:w-60 w-full h-auto mx-auto my-4 rounded-lg">
+                    <img :src="allyMaquetteImage" class="md:w-52 w-full h-auto mx-auto my-4 rounded-lg">
                 </div>
                 <a class="text-slate-100 text-lg md:text-xl mx-auto mt-4 mb-8 md:mb-4 border-2 border-sky-400 px-3 md:px-4 py-1 md:py-2 rounded-xl flex items-center justify-center transition duration-300 ease-in-out hover:bg-sky-400 hover:text-slate-800 w-max"
                 href="https://www.figma.com/file/4qAdBRyIAqw0mHNm1OJD8c/LGBT?type=design&node-id=51-7&mode=design&t=CKaZgB6UgXrnYvxX-00">

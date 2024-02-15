@@ -3,7 +3,6 @@
     <ParticlesBackground class="" />
 
     <!-- Hero Section -->
-    <!-- Hero Section Darkest Dungeon avec le style de Onerep -->
     <section class="flex flex-col md:flex-row justify-between w-11/12 md:w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 md:p-10 p-4 rounded-xl shadow-lg bg-cover bg-blend-multiply">
       <div class="md:w-1/2">
         <div class="flex flex-row flex-wrap items-center mb-4">

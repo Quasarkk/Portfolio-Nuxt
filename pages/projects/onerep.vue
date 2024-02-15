@@ -3,28 +3,28 @@
         <ParticlesBackground class="" />
 
         <!-- Hero Section -->
-        <!-- Hero Section -->
         <section
             class="flex flex-col md:flex-row justify-between w-11/12 md:w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 md:p-10 p-4 rounded-xl shadow-lg bg-cover bg-blend-multiply">
             <div class="md:w-1/2">
                 <div class="flex flex-row flex-wrap items-center mb-4">
                     <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Onerep</h1>
                 </div>
-                
+
                 <div class="flex justify-between mb-4 gap-4 md:gap-0 md:w-[80%]">
                     <span
-                    class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded-lg md:rounded flex items-center mb-2 md:mb-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-4 mr-2" viewBox="0 0 24 24" stroke-width="1.5"
-                      stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-                      <path d="M18 14v4h4" />
-                      <path d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
-                      <path d="M15 3v4" />
-                      <path d="M7 3v4" />
-                      <path d="M3 11h16" />
-                    </svg>Juillet - Août 2023
-                  </span>
+                        class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded-lg md:rounded flex items-center mb-2 md:mb-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-4 mr-2" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+                            <path d="M18 14v4h4" />
+                            <path d="M18 18m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                            <path d="M15 3v4" />
+                            <path d="M7 3v4" />
+                            <path d="M3 11h16" />
+                        </svg>Juillet - Août 2023
+                    </span>
                     <span
                         class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded-lg md:rounded flex items-center mb-2 md:mb-0">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-4 mr-2" viewBox="0 0 24 24"
@@ -104,17 +104,13 @@
         </section>
 
 
-        <h2 class="text-5xl text-center my-10">Le Projet en Détail</h2>
+
         <section class="my-20 mx-auto w-10/12 flex">
-
-
             <!-- phases du projet -->
             <div class="border-red flex flex-col">
-
                 <!-- Summary -->
-                <div
-                    class="mb-20 w-full  bg-gray-800 p-6 h-[400px] rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
-                    <p class="text-3xl font-semibold text-center mb-8">Résumé du projet</p>
+                <div class="mb-10 md:mb-20 md:w-2/3 bg-gray-800 p-6 rounded-lg shadow-xl transition hover:bg-gray-700">
+                    <p class="text-2xl md:text-3xl font-semibold text-center mb-4">Résumé du projet</p>
                     <p class="text-xl">Mon objectif initial était de concevoir une application de musculation sur mesure,
                         mettant l'accent sur la surcharge progressive et l'amélioration de la capacité de charge maximale en
                         une répétition (1RM). À cette époque, ma maîtrise des frameworks Laravel et Vue.js était
@@ -133,18 +129,16 @@
                     </ul>
                 </div>
 
-                <!-- UI Wireframe and Mockup -->
+                <!-- Wireframing and Mockups -->
                 <button @click="openModalWireframe()"
-                    class="w-2/3 my-20 bg-gray-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
-                    <p class="text-3xl font-semibold text-center mb-8">Maquettage UI et Wireframe</p>
-                    <p class="text-xl text-left">
-                        Bien que l'approche initiale de conception UI ait été ambitieuse, elle a permis de générer des idées
+                    class="mb-10 md:mb-20 bg-gray-800 md:w-2/3 p-6 rounded-lg shadow-xl transition hover:bg-gray-700">
+                    <p class="text-2xl md:text-3xl font-semibold text-center mb-4">Maquettage UI et Wireframe</p>
+                    <p class="text-xl "> Bien que l'approche initiale de conception UI ait été ambitieuse, elle a permis de
+                        générer des idées
                         créatives et d'affiner mon sens du design. Explorer les possibilités de l'UI tôt dans le processus a
                         contribué à une meilleure compréhension des éléments visuels qui améliorent l'expérience
-                        utilisateur, même si cela a été un détour dans le parcours de développement.
-                    </p>
-
-                    <div class="flex justify-center mt-8">
+                        utilisateur, même si cela a été un détour dans le parcours de développement.</p>
+                    <div class="flex w-full">
                         <img src="@/assets/onerep/exercises.png" class="h-[10%] w-[20%] mx-auto my-auto rounded-lg">
                         <img src="@/assets/onerep/today.png" class="h-[10%] w-[20%] mx-auto my-auto rounded-lg">
                     </div>
@@ -152,29 +146,27 @@
 
                 <!-- Interface CRUD Réactive -->
                 <button @click="openModalCrud()"
-                    class="w-2/3 my-20 ml-auto bg-gray-800 p-6  rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
-                    <p class="text-3xl font-semibold text-center mb-8">Élaboration d'une Interface CRUD Réactive</p>
-                    <p class="text-xl text-left">
-                        Dans le cadre de ce projet, une interface CRUD réactive a été développée, bien que l'application
+                    class="mb-10 md:mb-20 bg-gray-800 p-6  md:w-2/3 ml-auto rounded-lg shadow-xl transition hover:bg-gray-700">
+                    <p class="text-2xl md:text-3xl font-semibold text-center mb-4">Élaboration d'une Interface CRUD Réactive
+                    </p>
+                    <p class="text-xl text-left"> Dans le cadre de ce projet, une interface CRUD réactive a été développée,
+                        bien que l'application
                         globale n'ait pas atteint son terme. Utilisant Vue.js pour le frontend et Laravel pour le backend,
                         l'interface a été conçue pour gérer les données avec agilité, facilitant la création, la
-                        modification, et la suppression d'entrées de manière dynamique et sans rechargement de page.
-                    </p>
-                    <img class="rounded-lg w-56 mx-auto" src="@/assets/onerep/onerep-modal.png">
+                        modification, et la suppression d'entrées de manière dynamique et sans rechargement de page.</p>
+                    <img class="w-8/12 mt-8 mx-auto rounded-lg" src="@/assets/onerep/onerep-modal.png">
                 </button>
 
-
-
-                <!-- Edit -->
+                <!-- SPA -->
                 <button @click="openModalSpa()"
-                    class="w-2/3 my-20 bg-gray-800 p-6  rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-gray-700">
-                    <p class="text-3xl font-semibold text-center mb-8">Application Monopage</p>
-                    <p class="text-xl text-left">
-                        Le cœur de l'application réside dans son architecture monopage. Cette approche permet de naviguer
+                    class="mb-10 md:mb-20 bg-gray-800 p-6  md:w-2/3 ml-auto rounded-lg shadow-xl transition hover:bg-gray-700"
+                    id="backoffice">
+                    <p class="text-2xl md:text-3xl font-semibold text-center mb-4">Application Monopage</p>
+                    <p class="text-xl text-left"> Le cœur de l'application réside dans son architecture monopage. Cette
+                        approche permet de naviguer
                         entre les différentes fonctionnalités sans chargement de pages supplémentaires, rendant l'expérience
-                        utilisateur rapide et réactive, et réduisant le temps d'attente pour l'utilisateur.
-                    </p>
-                    <img class="rounded-lg w-56 mx-auto" src="@/assets/onerep/homepage.png">
+                        utilisateur rapide et réactive, et réduisant le temps d'attente pour l'utilisateur.</p>
+                    <img src="@/assets/onerep/homepage.png" class="w-8/12 mt-8 mx-auto rounded-lg">
                 </button>
 
             </div>
@@ -278,39 +270,47 @@
             </div>
         </section>
 
-
         <!-- Modale image CRUD -->
         <button v-if="isOpenCrud" @click="closeModalCrud()"
-            class="fixed top-0 bg-black/20 w-full h-full justify-center flex backdrop-blur-md overflow-auto">
-            <img :src="crudImage" class="h-5/6 mx-auto mt-24 rounded-lg">
+            class="fixed inset-0 bg-black/50 p-4 flex justify-center items-center z-50">
+            <div @click.stop class=" p-4 rounded shadow-lg max-w-4xl w-full mx-auto">
+                <img :src="crudImage" class="w-full h-auto max-w-4xl rounded-lg" />
+                <button @click="isOpenLdm = false" class="absolute top-0 right-0 m-2 text-black">&times;</button>
+            </div>
         </button>
+
 
         <!-- Modale image SPA -->
         <button v-if="isOpenSpa" @click="closeModalSpa()"
-            class="fixed top-0 bg-black/20 w-full h-full justify-center flex backdrop-blur-md overflow-auto">
-            <img :src="spaImage" class="h-5/6 mx-auto mt-24 rounded-lg">
-        </button>
-
-        <!-- Modale image Wirefreame -->
-        <button v-if="isOpenWireframe" @click="closeModalWireframe()"
-            class="fixed top-0 bg-black/20 w-full h-full justify-center flex backdrop-blur-md overflow-auto flex-col">
-            <div class="flex w-full h-[90%]">
-                <img :src="wireframeImage1" class="w-auto h-[80%] mx-auto my-auto rounded-lg">
-                <img :src="wireframeImage2" class="w-auto h-[80%] mx-auto my-auto rounded-lg">
+            class="fixed inset-0 bg-black/50 p-4 flex justify-center items-center z-50">
+            <div @click.stop class=" p-4 rounded shadow-lg max-w-4xl w-full mx-auto">
+                <img :src="spaImage" class="w-full h-auto max-w-4xl rounded-lg" />
+                <button @click="isOpenLdm = false" class="absolute top-0 right-0 m-2 text-black">&times;</button>
             </div>
-            <a class="text-slate-100 text-xl mx-auto border-2 border-sky-400 px-4 py-2 rounded-xl flex items-center justify-center transition duration-300 ease-in-out hover:bg-sky-400 hover:text-slate-800"
-                href="https://www.figma.com/file/ZSo4cG9oF8nnm3xcsPnJTz/Maquette-muscu?type=design&node-id=0-1&mode=design&t=V2ZsD7YAdqfPT3vn-0">
-                Lien vers Figma
-                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" width="24" height="24" viewBox="0 0 24 24"
-                    stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-                    <path d="M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z" />
-                    <path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15" />
-                </svg>
-            </a>
         </button>
 
+
+        <!-- Mockup modal -->
+        <button v-if="isOpenWireframe" @click="closeModalWireframe()"
+            class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
+            <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-8/12">
+                <div class="flex flex-col md:flex-row justify-around items-center md:items-start">
+                    <img :src="wireframeImage1" class="max-w-full md:max-w-md mx-auto my-4 rounded-lg">
+                    <img :src="wireframeImage2" class="max-w-full md:max-w-md mx-auto my-4 rounded-lg">
+                </div>
+                <a class="text-slate-100 text-lg md:text-xl mx-auto mt-4 mb-8 md:mb-4 border-2 border-sky-400 px-3 md:px-4 py-1 md:py-2 rounded-xl flex items-center justify-center transition duration-300 ease-in-out hover:bg-sky-400 hover:text-slate-800 w-max"
+                href="https://www.figma.com/file/ZSo4cG9oF8nnm3xcsPnJTz/Maquette-muscu?type=design&node-id=0-1&mode=design&t=V2ZsD7YAdqfPT3vn-0">
+                    Lien vers Figma
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" width="20" height="20" viewBox="0 0 24 24"
+                        stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M15 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M6 3m0 3a3 3 0 0 1 3 -3h6a3 3 0 0 1 3 3v0a3 3 0 0 1 -3 3h-6a3 3 0 0 1 -3 -3z" />
+                        <path d="M9 9a3 3 0 0 0 0 6h3m-3 0a3 3 0 1 0 3 3v-15" />
+                    </svg>
+                </a>
+            </div>
+        </button>
 
 
         <!-- Call to Action -->

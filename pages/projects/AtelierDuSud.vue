@@ -99,9 +99,6 @@
         src="https://www.macommune.info/wp-content/uploads/2021/02/atelier-du-sud-jeanne-carasso-poitevin-002-1200x766.jpg">
     </section>
 
-
-
-
     <h2 class="text-5xl text-center my-10">Le Projet en Détail</h2>
     <section class="mt-20 mx-auto w-10/12 flex" id="project-details">
       <VerticalNavbar />
@@ -231,7 +228,7 @@
     <!-- Modale pour LDM -->
     <div v-if="isOpenLdm" @click="isOpenLdm = false"
       class="fixed inset-0 bg-black/50 p-4 flex justify-center items-center z-50">
-      <div @click.stop class="bg-white p-4 rounded shadow-lg max-w-4xl w-full mx-auto">
+      <div @click.stop class=" p-4 rounded shadow-lg max-w-4xl w-full mx-auto">
         <img src="@/assets/atelierdusud/ldm.png" class="w-full h-auto max-w-4xl rounded-lg" />
         <button @click="isOpenLdm = false" class="absolute top-0 right-0 m-2 text-black">&times;</button>
       </div>
