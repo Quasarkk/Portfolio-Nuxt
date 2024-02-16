@@ -25,6 +25,15 @@ export default {
         ubuntu: ['Ubuntu', 'sans-serif'],
         sacramento: ['Sacramento', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        audiowide : ['audiowide']
+      },
+      boxShadow: {
+        'dark': '0 20px 25px -5px rgb(0 0 0 / 0.3), 0 8px 10px -6px rgb(0 0 0 / 0.3)',
+        'green': '0 10px 20px -5px rgb(5 150 105 / 0.4), 0 2px 6px -2px rgb(5 150 105 / 0.3)',
+        'red': '0 10px 20px -5px rgb(185 28 28 / 0.4), 0 2px 6px -2px rgb(185 28 28 / 0.3)',
+        'blue': '0 10px 20px -5px rgb(59 130 246 / 0.4), 0 2px 6px -2px rgb(59 130 246 / 0.3)',
+
+        'custom': '25px 25px 187.5px 7.5px rgba(255, 255, 255, 1)',
       },
     },
   },

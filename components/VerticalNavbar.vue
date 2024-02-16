@@ -1,5 +1,5 @@
 <template>
-    <nav class="navmenu bg-slate-800 rounded-xl pr-4 max-h-[680px]">
+    <nav class="navmenu bg-slate-800 rounded-xl pr-4 max-h-[680px] hidden md:inline">
         <ul class="">
             <li class="mb-4" data-section="needsGathering"><a id="week1" href="#needsGathering"
                   >Semaine 1 </a></li>
@@ -54,12 +54,11 @@ export default {
         // week1
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#needsGathering");
+            var elementTargetTop = elementTarget.getBoundingClientRect().top;
 
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
+            if (elementTargetTop <= 0) {
                 document.querySelector('#week1').classList.add('white-before');
             } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
                 document.querySelector('#week1').classList.remove('white-before');
             }
         });
@@ -67,12 +66,11 @@ export default {
         // week2
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#functionnalities");
+            var elementTargetTop = elementTarget.getBoundingClientRect().top;
 
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
+            if (elementTargetTop <= 0) {
                 document.querySelector('#week2').classList.add('white-before');
             } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
                 document.querySelector('#week2').classList.remove('white-before');
             }
         });
@@ -80,12 +78,11 @@ export default {
         // week3
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#technicalStack");
+            var elementTargetTop = elementTarget.getBoundingClientRect().top;
 
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
+            if (elementTargetTop <= 0) {
                 document.querySelector('#week3').classList.add('white-before');
             } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
                 document.querySelector('#week3').classList.remove('white-before');
             }
         });
@@ -93,12 +90,11 @@ export default {
         // week4
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#MCD");
+            var elementTargetTop = elementTarget.getBoundingClientRect().top;
 
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
+            if (elementTargetTop <= 0) {
                 document.querySelector('#week4').classList.add('white-before');
             } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
                 document.querySelector('#week4').classList.remove('white-before');
             }
         });
@@ -106,12 +102,11 @@ export default {
         // week5
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#wireframesMockups");
+            var elementTargetTop = elementTarget.getBoundingClientRect().top;
 
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
+            if (elementTargetTop <= 0) {
                 document.querySelector('#week5').classList.add('white-before');
             } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
                 document.querySelector('#week5').classList.remove('white-before');
             }
         });
@@ -119,12 +114,11 @@ export default {
         // week6
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#backoffice");
+            var elementTargetTop = elementTarget.getBoundingClientRect().top;
 
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
+            if (elementTargetTop <= 0) {
                 document.querySelector('#week6').classList.add('white-before');
             } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
                 document.querySelector('#week6').classList.remove('white-before');
             }
         });
@@ -132,12 +126,11 @@ export default {
         // week7
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#userInterface");
+            var elementTargetTop = elementTarget.getBoundingClientRect().top;
 
-            if (window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
-                // Sélectionnez l'élément par ID et ajoutez la classe 'white-before'
+            if (elementTargetTop <= 0) {
                 document.querySelector('#week7').classList.add('white-before');
             } else {
-                // Retirez la classe si l'utilisateur fait défiler vers le haut
                 document.querySelector('#week7').classList.remove('white-before');
             }
         });
