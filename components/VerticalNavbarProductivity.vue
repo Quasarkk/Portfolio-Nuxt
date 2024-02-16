@@ -1,17 +1,34 @@
 <template>
-    <nav class="navmenu bg-slate-800 rounded-xl pr-4 max-h-[680px] hidden md:inline">
+    <nav class="navmenu bg-slate-800 rounded-xl pr-4 max-h-[680px] hidden md:inline ">
         <ul class="">
-            <li class="mb-4" data-section="needsGathering"><a id="week1" href="#needsGathering"
-                  >Semaine 1 </a></li>
-            <li class="my-4" data-section="functionnalities"><a id="week2" href="#functionnalities">Semaine 2 </a></li>
-            <li class="my-4" data-section="technicalStack"><a id="week3" href="#technicalStack">Semaine 3 </a></li>
-            <li class="my-4" data-section="MCD"><a id="week4" href="#MCD">Semaine 4 </a></li>
-            <li class="my-4" data-section="wireframesMockups"><a id="week5" href="#wireframesMockups">Semaine 5 </a></li>
-            <li class="my-4" data-section="backoffice"><a id="week6" href="#backoffice">Semaine 6 </a></li>
-            <li class="mt-4" data-section="userInterface"><a id="week7" href="#userInterface">Semaine 7 </a></li>
+            <li class="mb-4" data-section="needsGathering">
+                <a id="week1" href="#needsGathering" class="block md:inline-block">
+                    <span class="hidden md:inline">V.0 (MVP)</span>
+                    <span class="hidden">V.0</span>
+                </a>
+            </li>
+            <li class="my-4" data-section="functionnalities">
+                <a id="week2" href="#functionnalities" class="block md:inline-block">
+                    <span class="hidden md:inline">V.1</span>
+                    <span class="hidden">V.1</span>
+                </a>
+            </li>
+            <li class="my-4" data-section="technicalStack">
+                <a id="week3" href="#technicalStack" class="block md:inline-block">
+                    <span class="hidden md:inline">V.2</span>
+                    <span class="hidden">V.2</span>
+                </a>
+            </li>
+            <li class="my-4" data-section="MCD">
+                <a id="week4" href="#MCD" class="block md:inline-block">
+                    <span class="hidden md:inline">V3</span>
+                    <span class="hidden">V3</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </template>
+
 
 <script>
 export default {
@@ -26,8 +43,6 @@ export default {
         const nav = document.querySelector('.navmenu');
         const projectDetails = document.querySelector('#project-details');
 
-
-
         // Navbar suis le scroll
         window.addEventListener('scroll', () => {
             const { top, bottom } = projectDetails.getBoundingClientRect();
@@ -38,20 +53,19 @@ export default {
             if (top >= 0) {
                 // Lorsque le haut du projet est visible, ajouter 'mb-auto' et 'fixed'
                 nav.classList.add('mb-auto',);
-                nav.classList.remove('top-24');
+                nav.classList.remove('top-56');
             } else if (bottom <= 800) {
                 // Lorsque le bas du projet n'est plus visible, ajouter 'mt-auto' et 'fixed'
                 nav.classList.add('mt-auto',);
-                nav.classList.remove('fixed', 'top-24');
+                nav.classList.remove('fixed', 'top-56');
             } else {
                 // Sinon, juste 'fixed' quand on est entre les deux
-                nav.classList.add('fixed', 'top-24');
+                nav.classList.add('fixed', 'top-56');
             }
         })
 
         // Navbar before background change on scroll
-
-        // week1
+        // v.0
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#needsGathering");
             var elementTargetTop = elementTarget.getBoundingClientRect().top;
@@ -63,7 +77,7 @@ export default {
             }
         });
 
-        // week2
+        // v.1
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#functionnalities");
             var elementTargetTop = elementTarget.getBoundingClientRect().top;
@@ -75,7 +89,7 @@ export default {
             }
         });
 
-        // week3
+        // v.2
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#technicalStack");
             var elementTargetTop = elementTarget.getBoundingClientRect().top;
@@ -87,10 +101,12 @@ export default {
             }
         });
 
-        // week4
+
+        // v.3
         window.addEventListener('scroll', () => {
             var elementTarget = document.querySelector("#MCD");
             var elementTargetTop = elementTarget.getBoundingClientRect().top;
+
 
             if (elementTargetTop <= 0) {
                 document.querySelector('#week4').classList.add('white-before');
@@ -98,43 +114,6 @@ export default {
                 document.querySelector('#week4').classList.remove('white-before');
             }
         });
-
-        // week5
-        window.addEventListener('scroll', () => {
-            var elementTarget = document.querySelector("#wireframesMockups");
-            var elementTargetTop = elementTarget.getBoundingClientRect().top;
-
-            if (elementTargetTop <= 0) {
-                document.querySelector('#week5').classList.add('white-before');
-            } else {
-                document.querySelector('#week5').classList.remove('white-before');
-            }
-        });
-
-        // week6
-        window.addEventListener('scroll', () => {
-            var elementTarget = document.querySelector("#backoffice");
-            var elementTargetTop = elementTarget.getBoundingClientRect().top;
-
-            if (elementTargetTop <= 0) {
-                document.querySelector('#week6').classList.add('white-before');
-            } else {
-                document.querySelector('#week6').classList.remove('white-before');
-            }
-        });
-
-        // week7
-        window.addEventListener('scroll', () => {
-            var elementTarget = document.querySelector("#userInterface");
-            var elementTargetTop = elementTarget.getBoundingClientRect().top;
-
-            if (elementTargetTop <= 0) {
-                document.querySelector('#week7').classList.add('white-before');
-            } else {
-                document.querySelector('#week7').classList.remove('white-before');
-            }
-        });
-
     }
 }
 </script>
