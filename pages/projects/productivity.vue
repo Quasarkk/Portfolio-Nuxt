@@ -87,7 +87,7 @@
                 </div>
             </div>
             <img class="md:w-[800px] w-full mt-4 md:mt-0 rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
-                src="@/assets/project-productivity.webp">
+                src="@/assets/project-productivity.webp" alt="image d'illustration du projet productivity">
         </section>
 
 

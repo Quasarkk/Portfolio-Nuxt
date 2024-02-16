@@ -23,7 +23,7 @@
                         </span>
                     </p>
                 </div>
-                <img class="w-full max-w-xs md:max-w-lg rounded-lg mt-4 md:mt-0" src="~/assets/pp_github.webp">
+                <img class="w-full max-w-xs md:max-w-lg rounded-lg mt-4 md:mt-0" src="~/assets/pp_github.webp" alt="">
             </div>
         </section>
 
@@ -35,8 +35,7 @@
                 <!-- Carte 1 : Projets -->
                 <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-slate-700">
                     <div class="flex justify-center items-center">
-                        <p class="text-6xl text-white mr-2" ref="projectCounter">7</p>
-                        <p class="text-2xl text-slate-300 mt-auto">projets</p>
+                        <p class="animate-number text-6xl text-white mr-2" ref="projectCounter" data-target="7" data-ref="projectCounter">0</p>                        <p class="text-2xl text-slate-300 mt-auto">projets</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-12 text-sky-300" viewBox="0 0 24 24"
                         stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -51,7 +50,7 @@
                 <!-- Carte 2 : Nuits blanches -->
                 <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-slate-700">
                     <div class="flex justify-center items-center">
-                        <p class="text-6xl text-white mr-2" ref="nightCounter">12</p>
+                        <p class="animate-number text-6xl text-white mr-2" ref="nightCounter" data-target="12" data-ref="nightCounter">0</p>
                         <p class="text-2xl text-slate-300 mt-auto">nuits blanches</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-12 text-sky-300" viewBox="0 0 24 24"
@@ -64,7 +63,7 @@
                 <!-- Carte 3 : Cafés -->
                 <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-slate-700">
                     <div class="flex justify-center items-center">
-                        <p class="text-6xl text-white mr-2" ref="cafeCounter">439</p>
+                        <p class="animate-number text-6xl text-white mr-2" ref="cafeCounter" data-target="439" data-ref="cafeCounter">0</p>
                         <p class="text-2xl text-slate-300 mt-auto">cafés</p>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-12 text-sky-300" viewBox="0 0 24 24"
@@ -90,7 +89,7 @@
                     <div
                         class="bg-slate-800 p-6 rounded-lg shadow-xl transition hover:bg-green-900 hover:shadow-green w-full flex-col">
                         <img class="h-24 mx-auto" src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png"
-                            alt="Vue.js">
+                            alt="Logo Vue.js">
                         <p class="text-xl sm:text-2xl text-white mt-6 mb-1 justify-center flex">Vue.js</p>
                         <p class="text-lg sm:text-xl text-slate-300 justify-center flex">5 projets</p>
                     </div>
@@ -102,7 +101,7 @@
                         class="bg-slate-800 p-6 rounded-lg shadow-xl transition hover:bg-red-900 hover:shadow-red w-full flex-col">
                         <img class="h-24 mx-auto"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
-                            alt="Laravel">
+                            alt="Logo Laravel">
                         <p class="text-xl sm:text-2xl text-white mt-6 mb-1 justify-center flex">Laravel</p>
                         <p class="text-lg sm:text-xl text-slate-300 justify-center flex">4 projets</p>
                     </div>
@@ -114,7 +113,7 @@
                         class="bg-slate-800 group p-6 rounded-lg shadow-xl hover:shadow-blue transition hover:bg-sky-900 w-full">
                         <img class="h-24 mx-auto"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
-                            alt="Tailwind">
+                            alt="Logo Tailwind">
                         <p class="text-xl sm:text-2xl mt-6 mb-1 text-white justify-center flex">Tailwind</p>
                         <p class="text-lg sm:text-xl text-slate-300 justify-center flex">7 projets</p>
                     </div>
@@ -159,7 +158,9 @@ export default {
     },
     mounted() {
         this.typewriterEffect();
-        this.animateNumber(7, 'projectCounter', 2000); // Pour "6 projets"
+        this.createObserver();
+
+        this.animateNumber(7, 'projectCounter', 2000); // Pour "7 projets"
         this.animateNumber(42, 'nightCounter', 2000); // Pour "42 nuits blanches"
         this.animateNumber(439, 'cafeCounter', 2000); // Pour "439 cafés"
     },
@@ -182,7 +183,6 @@ export default {
                 // 2
                 {
                     title: 'Portfolio',
-                    // link: '/projects/portfolio', // Supprimez cette ligne
                     imageSrc: projectPortfolioImage,
                     description: "Réalisation d'un portfolio pour exposer mes projets et expériences.",
                     logos: [
@@ -286,6 +286,33 @@ export default {
             };
             typeChar();
         },
+
+        createObserver() {
+            let options = {
+                root: null, // relative to document viewport
+                rootMargin: '0px', // margin around root. Values are similar to css property. Unitless values not allowed
+                threshold: 0.5 // visible amount of item shown in relation to root
+            };
+
+            let observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    // Assuming you have data attributes like `data-target="7"` and `data-ref="projectCounter"` in your HTML
+                    if (entry.isIntersecting) {
+                        let target = entry.target.dataset.target;
+                        let refName = entry.target.dataset.ref;
+                        this.animateNumber(parseInt(target), refName, 2000);
+                        observer.unobserve(entry.target); // Stop observing after animation has started
+                    }
+                });
+            }, options);
+
+            // Now observe all the elements you want to animate
+            let targets = document.querySelectorAll('.animate-number');
+            targets.forEach(target => {
+                observer.observe(target);
+            });
+        },
+
         animateNumber(target, refName, duration) {
             let currentNumber = 0;
             const startTime = new Date().getTime();
@@ -303,12 +330,12 @@ export default {
         getItemHeightClass(index) {
             // Vous pouvez définir vos hauteurs personnalisées ici
             const heights = {
-                '0': 'h-auto sm:h-[500px]',
-                '1': 'h-auto sm:h-[450px]',
+                '0': 'h-auto sm:h-[450px]',
+                '1': 'h-auto sm:h-[470px]',
                 '2': 'h-auto sm:h-[500px]',
-                '3': 'h-auto sm:h-[650px]',
-                '4': 'h-auto sm:h-[550px]',
-                '5': 'h-auto sm:h-[650px]',
+                '3': 'h-auto sm:h-[450px]',
+                '4': 'h-auto sm:h-[600px]',
+                '5': 'h-auto sm:h-[460px]',
                 '6': 'h-auto sm:h-[450px]',
             }
                 ;

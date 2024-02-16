@@ -96,7 +96,7 @@
       </div>
       <img
         class="md:w-[800px] w-full mt-4 md:mt-0 rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
-        src="https://www.macommune.info/wp-content/uploads/2021/02/atelier-du-sud-jeanne-carasso-poitevin-002-1200x766.jpg">
+        src="https://www.macommune.info/wp-content/uploads/2021/02/atelier-du-sud-jeanne-carasso-poitevin-002-1200x766.jpg" alt="image d'illustration de l'atelier du sud">
     </section>
 
     <h2 class="text-5xl text-center my-10">Le Projet en Détail</h2>
@@ -140,11 +140,12 @@
             continuer à
             travailler avec Laravel, Vue et CSS</p>
           <div class="flex justify-around mt-12">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" class="md:h-20 h-16  mx-3" />
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png"
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png" class="md:h-20 h-16  mx-3" alt="Vuejs logo" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png" alt="Laravel logo"
               class="md:h-20 h-16 mx-3" />
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png"
+              alt="Tailwind logo"
               class="md:h-20 h-16 mx-3" />
           </div>
         </div>
@@ -157,7 +158,7 @@
           <p class="text-xl text-left">Élaboration d'un Modèle Conceptuel de Données avec Drawio pour structurer la base
             de données.
           </p>
-          <img class="rounded-lg mt-8" src="@/assets/atelierdusud/ldm.png">
+          <img class="rounded-lg mt-8" src="@/assets/atelierdusud/ldm.png" alt="Capture d'écran du modèle logique de données">
         </button>
 
         <!-- Wireframing and Mockups -->
@@ -168,8 +169,8 @@
           <p class="text-xl ">Création de wireframes et application d'un design system pour une interface
             utilisateur cohérente.</p>
           <div class="flex w-full">
-            <img src="@/assets/atelierdusud/wireframe.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg">
-            <img src="@/assets/atelierdusud/mockup.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg">
+            <img src="@/assets/atelierdusud/wireframe.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg" alt="capture d'écran du wireframe">
+            <img src="@/assets/atelierdusud/mockup.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg" alt="capture d'écran de la maquette">
           </div>
         </button>
 
@@ -180,7 +181,7 @@
           <p class="text-2xl md:text-3xl font-semibold text-center mb-4">Backoffice</p>
           <p class="text-xl text-left">Conception d'un backoffice sécurisé pour la gestion d'articles, de tags, et des
             messages utilisateurs.</p>
-          <img src="@/assets/atelierdusud/backoffice.png" class="w-8/12 mt-8 mx-auto rounded-lg">
+          <img src="@/assets/atelierdusud/backoffice.png" class="w-8/12 mt-8 mx-auto rounded-lg" alt="capture d'écran du backoffice">
         </button>
 
         <!-- User Interface Part -->
@@ -191,8 +192,8 @@
           <p class="text-xl text-left">Présentation des associations, événements à venir, et mise en place d'une
             newsletter fonctionnelle.</p>
           <div class="flex">
-            <img src="@/assets/atelierdusud/contact.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg">
-            <img src="@/assets/atelierdusud/3nextevents.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg">
+            <img src="@/assets/atelierdusud/contact.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg" alt="capture d'écran du formulaire de contact">
+            <img src="@/assets/atelierdusud/3nextevents.png" class="w-[40%] h-2/3 mx-auto my-auto rounded-lg" alt="capture de la section affichant les 3 prochains évènements">
           </div>
 
         </button>
@@ -204,18 +205,18 @@
     <section class="flex w-full md:w-8/12 mx-auto">
       <!-- Première colonne pour les 3 premiers projets -->
       <div class="flex-col w-1/2 mx-2">
-        <img class="md:rounded-xl rounded-lg  my-2" src="@/assets/atelierdusud/galery/doc.png">
-        <img class="md:rounded-xl rounded-lg my-2" src="@/assets/atelierdusud/galery/message.png">
-        <img class="md:rounded-xl rounded-lg my-2" src="@/assets/atelierdusud/galery/newsletter.png">
-        <img class="md:rounded-xl rounded-lg my-2" src="@/assets/atelierdusud/galery/tags.png">
-        <img class="md:rounded-xl rounded-lg my-2" src="@/assets/atelierdusud/galery/blog.png">
+        <img class="md:rounded-xl rounded-lg  my-2" src="@/assets/atelierdusud/galery/doc.png" alt="capture d'écran du texte de documentation du backoffice">
+        <img class="md:rounded-xl rounded-lg my-2" src="@/assets/atelierdusud/galery/message.png" alt="capture d'écran des messages affichés sur le backoffice">
+        <img class="md:rounded-xl rounded-lg my-2" src="@/assets/atelierdusud/galery/newsletter.png" alt="capture d'écran des adresses emails des utilisateurs inscrit à la newsletter sur le backoffice">
+        <img class="md:rounded-xl rounded-lg my-2" src="@/assets/atelierdusud/galery/tags.png" alt="capture d'écran de l'interface de gestion de tags sur le backoffice">
+        <img class="md:rounded-xl rounded-lg my-2" src="@/assets/atelierdusud/galery/blog.png" alt="capture d'écran de la section blog de l'interface utilisateur">
       </div>
 
       <!-- Seconde colonne pour les 3 projets suivants -->
       <div class="flex-col w-1/2">
-        <img class="md:rounded-xl my-2 rounded-lg" src="@/assets/atelierdusud/galery/associations.png">
-        <img class="md:rounded-xl my-2 rounded-lg" src="@/assets/atelierdusud/galery/calendar.png">
-        <img class="md:rounded-xl my-2 rounded-lg" src="@/assets/atelierdusud/galery/presentation.png">
+        <img class="md:rounded-xl my-2 rounded-lg" src="@/assets/atelierdusud/galery/associations.png" alt="capture d'écran de la section de présentation du lieu associatif">
+        <img class="md:rounded-xl my-2 rounded-lg" src="@/assets/atelierdusud/galery/calendar.png" alt="capture d'écran de la section des prochains évènements sur l'interface utilisateur">
+        <img class="md:rounded-xl my-2 rounded-lg" src="@/assets/atelierdusud/galery/presentation.png" alt="capture d'écran de la section de présentation des associations sur l'interface utilisateur">
       </div>
     </section>
     <!-- Call to Action -->
@@ -229,7 +230,7 @@
     <div v-if="isOpenLdm" @click="isOpenLdm = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
       <div @click.stop class=" p-4 rounded max-w-4xl w-full mx-auto">
-        <img src="@/assets/atelierdusud/ldm.png" class="w-full h-auto max-w-4xl rounded-lg" />
+        <img src="@/assets/atelierdusud/ldm.png" class="w-full h-auto max-w-4xl rounded-lg" alt="Capture d'écran du modèle logique de données"/>
         <button @click="isOpenLdm = false" class="absolute top-0 right-0 m-2 text-black">&times;</button>
       </div>
     </div>
@@ -239,8 +240,8 @@
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
       <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-full md:w-8/12">
         <div class="flex flex-col md:flex-row justify-around items-center space-x-0 md:space-x-2 mx-auto md:gap-8">
-          <img src="@/assets/atelierdusud/wireframe.png" class="w-4/6 md:w-2/3 my-2 md:my-auto rounded-lg">
-          <img src="@/assets/atelierdusud/mockup.png" class="w-4/6 md:w-2/3 my-2 md:my-auto rounded-lg">
+          <img src="@/assets/atelierdusud/wireframe.png" class="w-4/6 md:w-2/3 my-2 md:my-auto rounded-lg" alt="capture d'écran du wireframe">
+          <img src="@/assets/atelierdusud/mockup.png" class="w-4/6 md:w-2/3 my-2 md:my-auto rounded-lg" alt="capture d'écran de la maquette">
         </div>
 
         <a class="text-slate-100 text-lg md:text-xl mx-auto mt-4 mb-8 md:mb-4 border-2 border-sky-400 px-3 md:px-4 py-1 md:py-2 rounded-xl flex items-center justify-center transition duration-300 ease-in-out hover:bg-sky-400 hover:text-slate-800 w-max"
@@ -261,7 +262,7 @@
     <div v-if="isOpenBackoffice" @click="isOpenBackoffice = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
       <div @click.stop class="p-4 rounded-lg max-w-xl w-full mx-4">
-        <img src="@/assets/atelierdusud/backoffice.png" class="max-w-full h-auto rounded-lg">
+        <img src="@/assets/atelierdusud/backoffice.png" class="max-w-full h-auto rounded-lg" alt="capture d'écran du backoffice">
       </div>
     </div>
 
@@ -270,8 +271,8 @@
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
       <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-8/12">
         <div class="flex flex-col md:flex-row justify-around items-center md:items-start md:gap-8">
-          <img src="@/assets/atelierdusud/3nextevents.png" class="max-w-full md:w-2/3 mx-auto my-4 rounded-lg">
-          <img src="@/assets/atelierdusud/contact.png" class="max-w-full md:w-2/3 mx-auto my-4 rounded-lg">
+          <img src="@/assets/atelierdusud/3nextevents.png" class="max-w-full md:w-2/3 mx-auto my-4 rounded-lg" alt="capture de la section affichant les 3 prochains évènements">
+          <img src="@/assets/atelierdusud/contact.png" class="max-w-full md:w-2/3 mx-auto my-4 rounded-lg" alt="capture d'écran du formulaire de contact">
         </div>
       </div>
     </div>

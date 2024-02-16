@@ -85,7 +85,7 @@
                 </div>
             </div>
             <img class="md:w-[800px] w-full mt-4 md:mt-0 rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
-                :src="allyLandingImage">
+                :src="allyLandingImage" alt="Capture d'écran de la page d'accueil">
         </section>
 
         <section class="my-20 mx-auto px-4 md:w-10/12 md:flex-col md:flex">
@@ -118,9 +118,9 @@
                         maquettes. Cela a impliqué l'application d'un système de design pour assurer une interface
                         utilisateur cohérente et intuitive, préparant le terrain pour une intégration fluide.</p>
                     <div class="flex w-full">
-                        <img src="@/assets/ally/wireframe.png" alt="Wireframe"
+                        <img src="@/assets/ally/wireframe.png" alt="Capture d'écran du wireframe"
                             class="h-[10%] w-[15%] mx-auto my-auto rounded-lg">
-                        <img src="@/assets/ally/maquette.png" alt="Maquette"
+                        <img src="@/assets/ally/maquette.png" alt="Capture d'écran de la maquette"
                             class="h-[10%] w-[13%] mx-auto my-auto rounded-lg">
                     </div>
                 </button>
@@ -234,8 +234,8 @@
             class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
             <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-full md:w-8/12">
                 <div class="flex flex-row justify-around items-center md:items-start space-x-1 mx-auto">
-                    <img :src="allyWireframeImage" class="h-96 md:w-60 md:h-[10%] my-auto rounded-lg">
-                    <img :src="allyMaquetteImage" class="h-96 md:w-60 md:h-[10%] my-auto rounded-lg">
+                    <img :src="allyWireframeImage" class="h-96 md:w-60 md:h-[10%] my-auto rounded-lg" alt="Capture d'écran du wireframe"> 
+                    <img :src="allyMaquetteImage" class="h-96 md:w-60 md:h-[10%] my-auto rounded-lg" alt="Capture d'écran de la maquette">
                 </div>
                 <a class="text-slate-100 text-lg md:text-xl mx-auto mt-4 mb-8 md:mb-4 border-2 border-sky-400 px-3 md:px-4 py-1 md:py-2 rounded-xl flex items-center justify-center transition duration-300 ease-in-out hover:bg-sky-400 hover:text-slate-800 w-max"
                     href="https://www.figma.com/file/4qAdBRyIAqw0mHNm1OJD8c/LGBT?type=design&node-id=51-7&mode=design&t=CKaZgB6UgXrnYvxX-00">

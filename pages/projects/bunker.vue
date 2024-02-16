@@ -78,7 +78,7 @@
           </a>
         </div>
       </div>
-      <img class="w-[800px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105" :src="bunkerImage">
+      <img class="w-[800px] rounded-lg shadow-2xl transform transition duration-500 hover:scale-105" :src="bunkerImage" alt="image de couverture du bunker project">
     </section>
 
     <section class="my-20 mx-auto w-10/12 flex">
@@ -109,7 +109,7 @@
             <br><br>
             Le bouton create ouvre la modale et permet d'entrer les informations
           </p>
-          <img class="rounded-lg" :src="bunkerCreateImage">
+          <img class="rounded-lg" :src="bunkerCreateImage" alt="image de la fenetre modale de création de table">
         </button>
 
         <!-- Edit -->
@@ -124,7 +124,7 @@
             Une fonction watch enregistre chaque modification sans action de l'utilisateur et des règles de validation
             vérifies que les valeurs des champs soient correcte.
           </p>
-          <img class="rounded-lg" :src="bunkerEditImage">
+          <img class="rounded-lg" :src="bunkerEditImage" alt="image de la fenetre modale d'édition de table">
         </button>
 
         <!-- Delete & show-->
@@ -133,7 +133,7 @@
           <p class="text-3xl font-semibold text-center mb-8">Suppression et affiche de table</p>
           <p class="text-xl">Un bouton delete permet de supprimer une table et un bouton show permet d'afficher les
             détails de la table.</p>
-          <img class="rounded-lg" :src="bunkerShowImage">
+          <img class="rounded-lg" :src="bunkerShowImage" alt="image de la fenetre modale d'affichage de table">
         </button>
       </div>
     </section>
@@ -149,7 +149,7 @@
     <div v-if="isOpenCreate" @click="isOpenCreate = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
       <div @click.stop class="p-4 rounded-lg max-w-xl w-full mx-4">
-        <img :src="bunkerCreateImage" class="max-w-full h-auto rounded-lg">
+        <img :src="bunkerCreateImage" class="max-w-full h-auto rounded-lg" alt="image de la fenetre modale de création de table">
       </div>
     </div>
 
@@ -157,7 +157,7 @@
     <div v-if="isOpenEdit" @click="isOpenEdit = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
       <div @click.stop class="p-4 rounded-lg max-w-xl w-full mx-4">
-        <img :src="bunkerEditImage" class="max-w-full h-auto rounded-lg">
+        <img :src="bunkerEditImage" class="max-w-full h-auto rounded-lg" alt="image de la fenetre modale d'édition de table">
       </div>
     </div>
 
@@ -165,7 +165,7 @@
     <div v-if="isOpenShow" @click="isOpenShow = false"
       class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
       <div @click.stop class="p-4 rounded-lg max-w-xl w-full mx-4">
-        <img :src="bunkerShowImage" class="max-w-full h-auto rounded-lg">
+        <img :src="bunkerShowImage" class="max-w-full h-auto rounded-lg" alt="image de la fenetre modale d'affichage de table">
       </div>
     </div>
 

@@ -2,7 +2,7 @@
   <div 
       class="group flex relative font-inter overflow-hidden mx- my-2 rounded-xl cursor-pointer"
       @click="handleClick">
-      <img class="w-full object-cover" :src="project.imageSrc" />
+      <img class="w-full h-auto object-cover object-center" :src="project.imageSrc" />
       <!-- Div au survol -->
       <div class="opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out absolute top-0 left-0 w-full h-full z-10 rounded-xl"
           style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.90));">

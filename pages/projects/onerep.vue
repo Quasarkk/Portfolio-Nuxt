@@ -100,7 +100,7 @@
                 </div>
             </div>
             <img class="md:w-[200px] w-40 mx-auto mt-4 md:mt-0 rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
-                :src="exercisesImage">
+                :src="exercisesImage" alt="capture d'écran de la section exercice">
         </section>
 
 
@@ -139,8 +139,8 @@
                         contribué à une meilleure compréhension des éléments visuels qui améliorent l'expérience
                         utilisateur, même si cela a été un détour dans le parcours de développement.</p>
                     <div class="flex w-full">
-                        <img src="@/assets/onerep/exercises.png" class="h-[10%] w-[20%] mx-auto my-auto rounded-lg">
-                        <img src="@/assets/onerep/today.png" class="h-[10%] w-[20%] mx-auto my-auto rounded-lg">
+                        <img src="@/assets/onerep/exercises.png" class="h-[10%] w-[20%] mx-auto my-auto rounded-lg" alt="capture d'écran de la section exercice">
+                        <img src="@/assets/onerep/today.png" class="h-[10%] w-[20%] mx-auto my-auto rounded-lg" alt="capture d'écran de la section aujourd'hui">
                     </div>
                 </button>
 
@@ -154,7 +154,7 @@
                         globale n'ait pas atteint son terme. Utilisant Vue.js pour le frontend et Laravel pour le backend,
                         l'interface a été conçue pour gérer les données avec agilité, facilitant la création, la
                         modification, et la suppression d'entrées de manière dynamique et sans rechargement de page.</p>
-                    <img class="w-8/12 md:w-60 mt-8 mx-auto rounded-lg" src="@/assets/onerep/onerep-modal.png">
+                    <img class="w-8/12 md:w-60 mt-8 mx-auto rounded-lg" src="@/assets/onerep/onerep-modal.png"  alt="capture d'écran de la modale de création de programme">
                 </button>
 
                 <!-- SPA -->
@@ -166,7 +166,7 @@
                         approche permet de naviguer
                         entre les différentes fonctionnalités sans chargement de pages supplémentaires, rendant l'expérience
                         utilisateur rapide et réactive, et réduisant le temps d'attente pour l'utilisateur.</p>
-                    <img src="@/assets/onerep/homepage.png" class="w-8/12 md:w-60 mt-8 mx-auto rounded-lg">
+                    <img src="@/assets/onerep/homepage.png" class="w-8/12 md:w-60 mt-8 mx-auto rounded-lg"  alt="capture d'écran de la section programmes">
                 </button>
 
             </div>
@@ -277,8 +277,8 @@
             class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center w-full">
             <div @click.stop class="rounded-lg mx-4 my-8 overflow-hidden w-full md:w-8/12">
                 <div class="flex flex-row justify-around items-center md:items-start mx-auto">
-                    <img :src="wireframeImage1" class="h-96 md:w-60 md:h-[10%] my-auto rounded-lg">
-                    <img :src="wireframeImage2" class="h-96 md:w-60 md:h-[10%] my-auto rounded-lg">
+                    <img :src="wireframeImage1" class="h-96 md:w-60 md:h-[10%] my-auto rounded-lg" alt="capture d'écran de la section exercice">>
+                    <img :src="wireframeImage2" class="h-96 md:w-60 md:h-[10%] my-auto rounded-lg" alt="capture d'écran de la section aujourd'hui">>
                 </div>
 
                 <a class="text-slate-100 text-lg md:text-xl mx-auto mt-4 mb-8 md:mb-4 border-2 border-sky-400 px-3 md:px-4 py-1 md:py-2 rounded-xl flex items-center justify-center transition duration-300 ease-in-out hover:bg-sky-400 hover:text-slate-800 w-max"
@@ -299,7 +299,7 @@
         <button v-if="isOpenCrud" @click="closeModalCrud()"
             class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
             <div @click.stop class="p-4 rounded-lg max-w-xl w-full mx-4">
-                <img :src="crudImage" class="max-w-full h-auto rounded-lg">
+                <img :src="crudImage" class="max-w-full h-auto rounded-lg"  alt="capture d'écran de la modale de création de programme">
             </div>
         </button>
 
@@ -307,7 +307,7 @@
         <button v-if="isOpenSpa" @click="closeModalSpa()"
             class="fixed inset-0 bg-black/50 backdrop-blur-md overflow-auto z-50 flex justify-center items-center">
             <div @click.stop class="p-4 rounded-lg max-w-xl w-full mx-4">
-                <img :src="spaImage" class="max-w-full h-auto rounded-lg">
+                <img :src="spaImage" class="max-w-full h-auto rounded-lg" alt="capture d'écran de la section programmes">
             </div>
         </button>
 
