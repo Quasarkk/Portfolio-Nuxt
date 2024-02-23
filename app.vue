@@ -35,6 +35,7 @@
     </NuxtLayout>
   </div>
 </template>
+
 <script setup lang="ts">
 import type { Container } from 'tsparticles-engine'
 
