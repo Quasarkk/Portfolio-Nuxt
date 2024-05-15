@@ -170,10 +170,10 @@ export default {
             projects: [
                 // 1
                 {
-                    title: 'Productivity',
-                    link: '/projects/productivity',
+                    title: 'PlanifAi',
+                    link: '/projects/planifai',
                     imageSrc: projectProductivityImage,
-                    description: "Réalisation d'une application de productivité",
+                    description: "Réalisation d'une application de planification",
                     logos: [
                         'https://upload.wikimedia.org/wikipedia/commons/f/f1/Vue.png',
                         'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1200px-Laravel.svg.png',
