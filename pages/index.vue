@@ -30,7 +30,7 @@
 
         <!-- Section 2  -->
         <section class="mx-auto my-32 w-11/12 md:w-10/12 rounded-xl  bg-cover bg-blend-multiply">
-            <h2 class="text-4xl md:text-6xl mb-10 text-white text-center">En moins d'un an</h2>
+            <h2 class="text-4xl md:text-6xl mb-10 text-white text-center">En un peu plus d'un an</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <!-- Carte 1 : Projets -->
                 <div class="bg-slate-800 p-6 rounded-lg shadow-xl hover:shadow-2xl transition hover:bg-slate-700">

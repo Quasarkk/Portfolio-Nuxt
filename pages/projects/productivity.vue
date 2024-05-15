@@ -6,7 +6,7 @@
             class="flex flex-col md:flex-row justify-between w-11/12 md:w-10/12 mx-auto my-32 bg-gradient-to-r from-slate-800 to-slate-900 md:p-10 p-4 rounded-xl shadow-lg bg-cover bg-blend-multiply">
             <div class="md:w-1/2">
                 <div class="flex flex-row flex-wrap items-center mb-4">
-                    <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">Productivity</h1>
+                    <h1 class="text-3xl md:text-5xl font-bold text-white mb-4">PlanifAi</h1>
                     <span class="text-xs bg-white text-slate-800 md:py-2 md:px-6 py-1 px-2 rounded-full font-bold md:ml-4 ml-2">EN COURS</span>
                 </div>
                 <div class="flex justify-between mb-4 gap-4 md:gap-0 md:w-[80%]">
@@ -31,7 +31,7 @@
                             <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                             <path d="M12 12l3 -2" />
                             <path d="M12 7v5" />
-                        </svg>1 mois
+                        </svg>4 mois
                     </span>
                     <span
                         class="bg-slate-600 text-white text-xs font-semibold px-2.5 py-0.5 rounded flex items-center mb-2 md:mb-0">
@@ -84,6 +84,11 @@
                                 d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                         </svg>GitHub
                     </a>
+                    <a href="https://planifai.xyz"
+                    class="group text-slate-400 underline-offset-2 decoration-2 hover:underline hover:font-bold hover:text-white flex items-center">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-external-link"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" /><path d="M11 13l9 -9" /><path d="M15 4h5v5" /></svg>
+                    Planifai.xyz
+                </a>
                 </div>
             </div>
             <img class="md:w-[800px] w-full mt-4 md:mt-0 rounded-lg shadow-2xl transform transition duration-500 hover:scale-105"
@@ -119,8 +124,8 @@
                 <div class="mb-10 md:mb-20 w-full bg-gray-800 p-6 rounded-lg shadow-xl transition hover:bg-gray-700"
                     id="needsGathering">
                     <div class="flex md:gap-8 gap-2 items-center mb-4 flex-wrap">
-                        <p class="text-2xl md:text-3xl font-semibold text-center flex-wrap">V.0 - MVP (En cours)</p>
-                        <span class="text-xs bg-white text-green-800 py-1 px-3 rounded-full font-bold">EN COURS</span>
+                        <p class="text-2xl md:text-3xl font-semibold text-center flex-wrap">V.0 - MVP</p>
+                        <span class="text-xs bg-white text-green-800 py-1 px-3 rounded-full font-bold">TERMINÉE</span>
                     </div>
                     <p class="text-xl">La V.0 de ce projet comportera les keys features ainsi qu'une UX/UI simplifié
                     </p>
